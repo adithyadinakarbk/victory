@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-fixed-dim": "#2ae500",
+          "inverse-on-surface": "#302f39",
+          "error-container": "#93000a",
+          "surface-dim": "#13131b",
+          "surface-container-high": "#292932",
+          "primary-fixed": "#79ff5b",
+          "secondary": "#f5fff3",
+          "primary-container": "#39ff14",
+          "surface-tint": "#2ae500",
+          "inverse-surface": "#e4e1ed",
+          "surface-container": "#1f1f27",
+          "on-tertiary": "#4a007f",
+          "on-error-container": "#ffdad6",
+          "outline-variant": "#3c4b35",
+          "secondary-container": "#34ff8d",
+          "on-surface": "#e4e1ed",
+          "on-tertiary-container": "#8537c9",
+          "secondary-fixed-dim": "#00e479",
+          "surface-variant": "#34343d",
+          "on-background": "#e4e1ed",
+          "surface-container-lowest": "#0d0d16",
+          "on-primary-container": "#107100",
+          "on-secondary": "#003919",
+          "inverse-primary": "#106e00",
+          "surface-container-low": "#1b1b23",
+          "error": "#ffb4ab",
+          "on-secondary-fixed-variant": "#005228",
+          "on-primary-fixed": "#022100",
+          "on-tertiary-fixed": "#2d0050",
+          "tertiary-fixed": "#f1dbff",
+          "tertiary-fixed-dim": "#deb7ff",
+          "secondary-fixed": "#60ff99",
+          "surface-bright": "#393842",
+          "on-secondary-container": "#007239",
+          "primary": "#efffe3",
+          "tertiary-container": "#edd4ff",
+          "on-secondary-fixed": "#00210c",
+          "on-surface-variant": "#baccb0",
+          "on-primary-fixed-variant": "#095300",
+          "outline": "#85967c",
+          "on-tertiary-fixed-variant": "#680eac",
+          "surface": "#13131b",
+          "on-primary": "#053900",
+          "background": "#13131b",
+          "tertiary": "#fff8fd",
+          "surface-container-highest": "#34343d",
+          "on-error": "#690005"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-md": "1rem",
+          "margin": "2.5rem",
+          "space-xl": "2.5rem",
+          "gutter-mobile": "0.75rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "label-telemetry": [
+            "Space Mono"
+          ],
+          "headline-md": [
+            "Syne"
+          ],
+          "headline-lg": [
+            "Syne"
+          ],
+          "headline-lg-mobile": [
+            "Syne"
+          ],
+          "body-sm": [
+            "Space Mono"
+          ],
+          "headline-sm": [
+            "Syne"
+          ],
+          "display-hero": [
+            "Syne"
+          ],
+          "body-lg": [
+            "Space Mono"
+          ],
+          "label-code": [
+            "Space Mono"
+          ],
+          "body-md": [
+            "Space Mono"
+          ],
+          "display-hero-mobile": [
+            "Syne"
+          ]
+        },
+        "fontSize": {
+          "label-telemetry": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.12em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.04em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-code": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero-mobile": [
+            "38px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ]
+        }
+      },
+    },
+  }
+</script></head><body class="bg-background font-body-md text-on-surface relative min-h-screen selection:bg-primary-container selection:text-on-primary-container"><div class="fixed inset-0 pointer-events-none z-0 overflow-hidden"><div class="absolute -top-40 left-1/4 w-[500px] h-[500px] bg-primary-container/10 rounded-full blur-[128px]"></div><div class="absolute top-1/3 -right-20 w-[450px] h-[450px] bg-secondary-fixed/10 rounded-full blur-[140px]"></div><div class="absolute -bottom-20 left-1/3 w-[600px] h-[600px] bg-secondary-container/10 rounded-full blur-[150px]"></div><div class="absolute inset-0 bg-[radial-gradient(rgba(57,255,20,0.04)_1px,transparent_1px)] [background-size:24px_24px]"></div></div><header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_12px_rgba(0,0,0,0.6)]"><div class="h-16 w-full max-w-[1360px] mx-auto px-margin lg:px-space-xl flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><img alt="Adithya Cyber Monogram Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCpumzF9XyRhI9aJiDEZp3dP9cwxgBUjBGKvVK2vj5HOMeZf9sUmOUM6qxAx0ptjiAEAu7GIcZBgUtmMTFsUrPhopLGcr0TuMFQGvWoAEjOBhHmMd9hI0AoS8Lle42CPGGzx9tJV1pwhqHjJFzGqwRgvxIwN3IEdcqyQoHLnSPtOSpcodm-sWvh_TaC9DhGlvPqyG7mjoGl6v88rBmiXDIJEC18orAAcp6nMGBQRxmn"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">ADITHYA</span><span class="font-label-code text-[10px] text-primary-container uppercase tracking-widest">RADIUM v4.0</span></div></div><nav class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-xl" data-active-classes="bg-surface-container-high text-primary-container border border-primary-container/40 font-semibold"><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="overview" href="#">Overview</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="about-me" href="#">About Me</a><a aria-current="page" class="px-space-md py-space-xs rounded-lg transition-colors bg-surface-container-high text-primary-container border border-primary-container/40 font-semibold shadow-[0_0_12px_rgba(57,255,20,0.2)]" data-path="skills-arsenal" href="#">Skills Arsenal</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="projects-and-work" href="#">Projects &amp; Work</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="milestones-and-journey" href="#">Milestones &amp; Journey</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-lowest border border-outline-variant/40 rounded-full"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span></span><span class="font-label-code text-label-code text-primary-container tracking-widest">SYSTEM ONLINE</span></div><div class="flex items-center gap-space-xs pl-space-xs bg-surface-container-low/60 border border-outline-variant/30 rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0nfuMotQ1j1Bj3MyDeN-6_5Mojen8av-SlNwx_pmRm5gxsDSxa4rYM5nbdWW1OvRwA5kCKiKyY0L9-1Au-JeSXJDbG0vu8cuanD8mog4pOsfJnfwY8XdAsdqdk72NIJDj1VgWWtKyZLph8EEBFH5H-sy_ZUDHOuyI6j_9VIFkX9uzuYGuNNVZllTer8gizs_HyDF5PfO4pnPCN51GbSXVp2-9aEhQa0JqxJN_RH6i"/><div class="hidden md:flex flex-col pr-space-sm"><span class="font-label-code text-label-code text-on-surface">DEV.AUTH</span><span class="font-label-code text-[9px] leading-3 text-outline">SYNTH-RADIUM</span></div></div></div></div></header><main class="relative z-10 w-full pt-16"><div class="flex flex-col w-full">
+<!-- Interactive Style Scaffolding for 3D Cards & Micro-HUD Geometry -->
+<style>
+    .perspective-1000 { perspective: 1000px; }
+    .transform-style-3d { transform-style: preserve-3d; }
+    .backface-hidden { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+    .rotate-y-180 { transform: rotateY(180deg); }
+    .card-flip-inner { transition: transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .is-flipped { transform: rotateY(180deg); }
+  </style>
+<!-- Atmospheric Backdrop Radiance & HUD Wireframe Overlay -->
+<div class="relative w-full max-w-[1360px] mx-auto px-margin lg:px-space-xl py-space-lg lg:py-space-xl flex flex-col gap-space-lg lg:gap-space-xl">
+<!-- Section Header HUD Banner -->
+<header class="relative w-full bg-surface-container-low/70 backdrop-blur-xl p-space-md lg:p-space-lg rounded-xl border border-outline-variant/40 shadow-xl overflow-hidden">
+<!-- Decorative Micro Crosshairs & Corner Grids -->
+<div class="absolute top-2 left-3 font-label-telemetry text-label-telemetry text-outline opacity-70 select-none">+ 0x77F // MATRIX_RADIUM_READY</div>
+<div class="absolute top-2 right-3 font-label-telemetry text-label-telemetry text-primary-container opacity-85 select-none">NODE_STABILITY: 99.98%</div>
+<div class="absolute -bottom-8 -right-8 w-44 h-44 bg-primary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md relative z-10 pt-space-xs">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/15 border border-primary-container/40 text-primary-container font-label-code text-label-code tracking-widest uppercase">SYNAPSE CLUSTER</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse shadow-[0_0_8px_rgba(57,255,20,0.8)]"></span>
+<span class="font-label-code text-label-code text-on-surface-variant">HEX_KEY: 0xAD17HYA</span>
+</div>
+<h1 class="font-display-hero text-headline-lg lg:text-display-hero tracking-tight text-on-surface">
+            02 / MY ARSENAL <span class="text-primary-container">—</span> <span class="bg-gradient-to-r from-primary-container via-[#ccff00] to-secondary-fixed bg-clip-text text-transparent">POWERED BY SKILLS</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Engineered algorithmic capability spanning core language stacks, high-density cyber-glassmorphic interfaces, continuous integration pipelines, and generative synthetic intelligence nodes.
+          </p>
+</div>
+<!-- Filter Array HUD Segment -->
+<div class="flex flex-wrap items-center gap-space-xs p-1.5 bg-surface-container-lowest/90 border border-outline-variant/40 rounded-xl shrink-0">
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-label-code text-label-code uppercase transition-all duration-300 bg-primary-container text-surface-container-lowest font-bold shadow-[0_0_16px_rgba(57,255,20,0.45)] border border-primary-container" data-filter="all" type="button">
+            [ ALL NODES ]
+          </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-label-code text-label-code uppercase transition-all duration-300 bg-surface-container text-on-surface-variant hover:text-primary-container hover:bg-surface-container-high border border-transparent hover:border-outline-variant/50" data-filter="languages" type="button">
+            LANGUAGES
+          </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-label-code text-label-code uppercase transition-all duration-300 bg-surface-container text-on-surface-variant hover:text-primary-container hover:bg-surface-container-high border border-transparent hover:border-outline-variant/50" data-filter="design" type="button">
+            DESIGN &amp; UI/UX
+          </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-label-code text-label-code uppercase transition-all duration-300 bg-surface-container text-on-surface-variant hover:text-primary-container hover:bg-surface-container-high border border-transparent hover:border-outline-variant/50" data-filter="tools" type="button">
+            TOOLS &amp; DEVOPS
+          </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-label-code text-label-code uppercase transition-all duration-300 bg-surface-container text-on-surface-variant hover:text-primary-container hover:bg-surface-container-high border border-transparent hover:border-outline-variant/50" data-filter="emerging" type="button">
+            EMERGING TECH
+          </button>
+</div>
+</div>
+</header>
+<!-- Top Telemetry & Visual Signal Strip -->
+<section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-space-md">
+<!-- Telemetry Chip 1 -->
+<div class="bg-surface-container-low/60 backdrop-blur-md p-space-md rounded-xl border border-outline-variant/30 flex items-center justify-between shadow-md group hover:border-primary-container/40 transition-colors">
+<div class="flex flex-col">
+<span class="font-label-telemetry text-label-telemetry text-outline uppercase tracking-wider">COMPILED STACKS</span>
+<span class="font-headline-md text-headline-md text-primary-container font-bold">18<span class="text-secondary-fixed text-headline-sm">+</span></span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container border border-outline-variant/30 flex items-center justify-center text-primary-container shadow-[0_0_10px_rgba(57,255,20,0.2)]">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+</div>
+</div>
+<!-- Telemetry Chip 2 -->
+<div class="bg-surface-container-low/60 backdrop-blur-md p-space-md rounded-xl border border-outline-variant/30 flex items-center justify-between shadow-md group hover:border-secondary-fixed/40 transition-colors">
+<div class="flex flex-col">
+<span class="font-label-telemetry text-label-telemetry text-outline uppercase tracking-wider">INTERFACE FIDELITY</span>
+<span class="font-headline-md text-headline-md text-secondary-fixed font-bold">99.4<span class="text-label-code text-secondary font-normal">%</span></span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container border border-outline-variant/30 flex items-center justify-center text-secondary-fixed shadow-[0_0_10px_rgba(96,255,153,0.2)]">
+<span class="material-symbols-outlined text-[24px]">view_in_ar</span>
+</div>
+</div>
+<!-- Telemetry Chip 3 -->
+<div class="bg-surface-container-low/60 backdrop-blur-md p-space-md rounded-xl border border-outline-variant/30 flex items-center justify-between shadow-md group hover:border-[#ccff00]/40 transition-colors">
+<div class="flex flex-col">
+<span class="font-label-telemetry text-label-telemetry text-outline uppercase tracking-wider">SYNTHETIC INFERENCE</span>
+<span class="font-headline-md text-headline-md text-[#ccff00] font-bold">142<span class="text-label-code text-primary font-normal"> tps</span></span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container border border-outline-variant/30 flex items-center justify-center text-[#ccff00] shadow-[0_0_10px_rgba(204,255,0,0.2)]">
+<span class="material-symbols-outlined text-[24px]">neurology</span>
+</div>
+</div>
+<!-- Telemetry Visual Sparkline / Frequency -->
+<div class="hidden lg:flex bg-surface-container-low/60 backdrop-blur-md p-space-md rounded-xl border border-outline-variant/30 flex-col justify-between shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-telemetry text-label-telemetry text-outline uppercase tracking-wider">BANDWIDTH LOAD</span>
+<span class="font-label-code text-label-code text-primary-container">OPTIMAL</span>
+</div>
+<div class="w-full flex items-end gap-1.5 h-7 pt-1">
+<div class="w-full bg-surface-container-highest rounded-t h-[40%]"></div>
+<div class="w-full bg-primary-container/30 rounded-t h-[65%]"></div>
+<div class="w-full bg-primary-container/60 rounded-t h-[85%]"></div>
+<div class="w-full bg-secondary-fixed rounded-t h-[50%]"></div>
+<div class="w-full bg-[#ccff00] rounded-t h-[95%]"></div>
+<div class="w-full bg-secondary-container rounded-t h-[70%]"></div>
+<div class="w-full bg-primary-fixed-dim rounded-t h-[45%]"></div>
+<div class="w-full bg-primary-container rounded-t h-[100%] shadow-[0_0_12px_rgba(57,255,20,0.9)]"></div>
+</div>
+</div>
+</section>
+<!-- Main Flashcard Grid: 4 Pillars of Engineering -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-space-lg w-full" id="arsenal-grid">
+<!-- CARD 01: Programming & Languages -->
+<article class="arsenal-card perspective-1000 w-full min-h-[460px] flex flex-col group" data-category="languages">
+<div class="card-flip-inner relative w-full flex-1 transform-style-3d cursor-pointer rounded-xl">
+<!-- Front Face -->
+<div class="absolute inset-0 backface-hidden bg-surface-container-low/85 backdrop-blur-xl p-space-lg rounded-xl border border-outline-variant/40 shadow-xl flex flex-col justify-between overflow-hidden group-hover:border-primary-container/50 transition-colors">
+<!-- Neon Ambient Glow Corner -->
+<div class="absolute top-0 right-0 w-36 h-36 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-primary-container bg-primary-container/10 border border-primary-container/30 px-space-xs py-0.5 rounded">// MOD.01</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant uppercase tracking-wider">PROGRAMMING CORE</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-code text-[11px] text-outline">
+<span class="material-symbols-outlined text-[16px] text-primary-container">touch_app</span>
+<span>CLICK TO REVERSE</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-space-xs">
+<span>Languages &amp; Architectures</span>
+</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  High-throughput algorithmic structures, synchronous script design, and scalable foundation systems.
+                </p>
+</div>
+<!-- Skill Proficiency Neon Sliders -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Python -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_6px_rgba(57,255,20,0.8)]"></span>Python</span>
+<span class="text-primary-container font-bold">94%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-fixed-dim via-primary-container to-[#ccff00] rounded-full shadow-[0_0_10px_rgba(57,255,20,0.85)]" style="width: 94%"></div>
+</div>
+</div>
+<!-- JavaScript (ESNext) -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed shadow-[0_0_6px_rgba(96,255,153,0.8)]"></span>JavaScript (ESNext)</span>
+<span class="text-secondary-fixed font-bold">96%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-fixed-dim to-secondary-fixed rounded-full shadow-[0_0_10px_rgba(96,255,153,0.85)]" style="width: 96%"></div>
+</div>
+</div>
+<!-- HTML5 & Semantic Web -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#ccff00] shadow-[0_0_6px_rgba(204,255,0,0.8)]"></span>HTML5 Semantic Core</span>
+<span class="text-[#ccff00] font-bold">98%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-[#ccff00] rounded-full shadow-[0_0_10px_rgba(204,255,0,0.85)]" style="width: 98%"></div>
+</div>
+</div>
+<!-- CSS3 & Preprocessing -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container shadow-[0_0_6px_rgba(52,255,141,0.8)]"></span>CSS3 Modern Engine</span>
+<span class="text-secondary-container font-bold">92%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-on-secondary-container via-secondary-fixed-dim to-secondary-container rounded-full shadow-[0_0_10px_rgba(52,255,141,0.7)]" style="width: 92%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Tech Tags & Trigger Button -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pt-space-md relative z-10">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-space-xs py-1 rounded bg-surface-container border border-outline-variant/30 font-label-code text-label-code text-primary-container">Data Structures</span>
+<span class="px-space-xs py-1 rounded bg-surface-container border border-outline-variant/30 font-label-code text-label-code text-secondary-fixed">Async I/O</span>
+<span class="px-space-xs py-1 rounded bg-surface-container border border-outline-variant/30 font-label-code text-label-code text-[#ccff00]">REST Engine</span>
+</div>
+<button class="flip-trigger-btn px-space-sm py-1.5 rounded-lg bg-surface-container-high border border-outline-variant/40 hover:border-primary-container hover:bg-primary-container hover:text-on-primary-container text-primary-container transition-all font-label-code text-label-code uppercase flex items-center gap-1 shadow-sm" type="button">
+<span>INSPECT DEEP CODE</span>
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+</button>
+</div>
+</div>
+<!-- Back Face (Deep Dive Breakdown) -->
+<div class="absolute inset-0 backface-hidden rotate-y-180 bg-surface-container-high/95 backdrop-blur-2xl p-space-lg rounded-xl border border-primary-container/40 shadow-2xl flex flex-col justify-between overflow-hidden">
+<div class="absolute -bottom-8 -left-8 w-44 h-44 bg-primary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-primary-container uppercase tracking-widest">// REVERSE TEL: SPECIFICATION MATRIX</span>
+<button class="flip-back-btn p-1 rounded-md bg-surface-container hover:bg-surface-container-highest text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Programmatic Architecture In-Depth</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-primary-container font-bold font-label-code text-label-code">01. PYTHON ARCH</span>
+<span>Data parsing, automation bots, mathematical modeling, algorithmic traversal.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-secondary-fixed font-bold font-label-code text-label-code">02. ASYNC JS</span>
+<span>Event loop mastery, micro-tasks, Web Workers, reactive event-driven patterns.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-[#ccff00] font-bold font-label-code text-label-code">03. DATA ALGORITHMS</span>
+<span>Trees, Hash Tables, Graph theory, dynamic programming arrays &amp; optimization.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-secondary-fixed-dim font-bold font-label-code text-label-code">04. RUNTIME EFFICIENCY</span>
+<span>V8 memory profiling, sub-16ms render loop targets, non-blocking logic.</span>
+</div>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/60 border border-outline-variant/20 flex items-center justify-between font-label-code text-[11px] text-outline relative z-10">
+<span>STATUS: PRODUCTION TESTED</span>
+<span class="text-primary-container">LATENCY: 0.8ms</span>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 02: Web Design & UI/UX -->
+<article class="arsenal-card perspective-1000 w-full min-h-[460px] flex flex-col group" data-category="design">
+<div class="card-flip-inner relative w-full flex-1 transform-style-3d cursor-pointer rounded-xl">
+<!-- Front Face -->
+<div class="absolute inset-0 backface-hidden bg-surface-container-low/85 backdrop-blur-xl p-space-lg rounded-xl border border-outline-variant/40 shadow-xl flex flex-col justify-between overflow-hidden group-hover:border-secondary-fixed/50 transition-colors">
+<!-- Neon Ambient Glow Corner -->
+<div class="absolute top-0 right-0 w-36 h-36 bg-secondary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-secondary-fixed bg-secondary-fixed/10 border border-secondary-fixed/30 px-space-xs py-0.5 rounded">// MOD.02</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant uppercase tracking-wider">EXPERIENCE CANVAS</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-code text-[11px] text-outline">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">touch_app</span>
+<span>CLICK TO REVERSE</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-space-xs">
+<span>Web Design &amp; UI/UX</span>
+</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  High-density responsive design tokens, precision glassmorphism, mathematical rhythm, and fluidity.
+                </p>
+</div>
+<!-- Skill Proficiency Neon Sliders -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Responsive Design & Fluid Breakpoints -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed shadow-[0_0_6px_rgba(96,255,153,0.8)]"></span>Adaptive Grid Systems &amp; Fluid Units</span>
+<span class="text-secondary-fixed font-bold">98%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-on-secondary-container via-secondary-fixed-dim to-secondary-fixed rounded-full shadow-[0_0_10px_rgba(96,255,153,0.8)]" style="width: 98%"></div>
+</div>
+</div>
+<!-- Tailwind CSS Engine -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_6px_rgba(57,255,20,0.8)]"></span>Tailwind &amp; Utility Design Tokens</span>
+<span class="text-primary-container font-bold">95%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-fixed-dim via-primary-container to-[#ccff00] rounded-full shadow-[0_0_10px_rgba(57,255,20,0.8)]" style="width: 95%"></div>
+</div>
+</div>
+<!-- CSS Grid & Subgrid Mastery -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#ccff00] shadow-[0_0_6px_rgba(204,255,0,0.8)]"></span>CSS Grid &amp; Flexbox Mechanics</span>
+<span class="text-[#ccff00] font-bold">96%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-[#ccff00] rounded-full shadow-[0_0_10px_rgba(204,255,0,0.8)]" style="width: 96%"></div>
+</div>
+</div>
+<!-- Cyber Glassmorphic Depth -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container shadow-[0_0_6px_rgba(52,255,141,0.8)]"></span>Cyber Glassmorphism &amp; Specular HUD</span>
+<span class="text-secondary-container font-bold">92%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-fixed-dim to-secondary-container rounded-full shadow-[0_0_10px_rgba(52,255,141,0.7)]" style="width: 92%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Tech Tags & Trigger Button -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pt-space-md relative z-10">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-space-xs py-1 rounded bg-surface-container border border-outline-variant/30 font-label-code text-label-code text-secondary-fixed">Micro-Animations</span>
+<span class="px-space-xs py-1 rounded bg-surface-container border border-outline-variant/30 font-label-code text-label-code text-primary-container">Spatial Hierarchy</span>
+<span class="px-space-xs py-1 rounded bg-surface-container border border-outline-variant/30 font-label-code text-label-code text-[#ccff00]">Figma Vectors</span>
+</div>
+<button class="flip-trigger-btn px-space-sm py-1.5 rounded-lg bg-surface-container-high border border-outline-variant/40 hover:border-secondary-fixed hover:bg-secondary-fixed hover:text-on-secondary text-secondary-fixed transition-all font-label-code text-label-code uppercase flex items-center gap-1 shadow-sm" type="button">
+<span>INSPECT VISUAL SYSTEM</span>
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+</button>
+</div>
+</div>
+<!-- Back Face -->
+<div class="absolute inset-0 backface-hidden rotate-y-180 bg-surface-container-high/95 backdrop-blur-2xl p-space-lg rounded-xl border border-secondary-fixed/40 shadow-2xl flex flex-col justify-between overflow-hidden">
+<div class="absolute -bottom-8 -left-8 w-44 h-44 bg-secondary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-secondary-fixed uppercase tracking-widest">// REVERSE TEL: UI/UX COMPOSITION</span>
+<button class="flip-back-btn p-1 rounded-md bg-surface-container hover:bg-surface-container-highest text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Human-Machine Interaction Architecture</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-secondary-fixed font-bold font-label-code text-label-code">01. GLASS TRANSLUCENCY</span>
+<span>Calculated specular rim lighting, multi-step blur filters, zero-border contrast.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-primary-container font-bold font-label-code text-label-code">02. KINETIC ACCELERATION</span>
+<span>Cubic-bezier timing models mimicking organic inertial physics and synthetic snaps.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-[#ccff00] font-bold font-label-code text-label-code">03. WCAG CONTRAST SAFETY</span>
+<span>Guaranteed luminous ratios on deep obsidian backdrops for maximum readability.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-secondary-container font-bold font-label-code text-label-code">04. ADAPTIVE CANVASES</span>
+<span>Fluid token scaling preserving typographic cadence across 4K displays and handheld screens.</span>
+</div>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/60 border border-outline-variant/20 flex items-center justify-between font-label-code text-[11px] text-outline relative z-10">
+<span>DESIGN PHILOSOPHY: ZERO REDUNDANT CHROME</span>
+<span class="text-secondary-fixed">DPI: SCALED VECTOR</span>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 03: Development & Tools -->
+<article class="arsenal-card perspective-1000 w-full min-h-[460px] flex flex-col group" data-category="tools">
+<div class="card-flip-inner relative w-full flex-1 transform-style-3d cursor-pointer rounded-xl">
+<!-- Front Face -->
+<div class="absolute inset-0 backface-hidden bg-surface-container-low/85 backdrop-blur-xl p-space-lg rounded-xl border border-outline-variant/40 shadow-xl flex flex-col justify-between overflow-hidden group-hover:border-[#ccff00]/50 transition-colors">
+<!-- Neon Ambient Glow Corner -->
+<div class="absolute top-0 right-0 w-36 h-36 bg-[#ccff00]/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-[#ccff00] bg-[#ccff00]/10 border border-[#ccff00]/30 px-space-xs py-0.5 rounded">// MOD.03</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant uppercase tracking-wider">DEV ENVIRONMENT</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-code text-[11px] text-outline">
+<span class="material-symbols-outlined text-[16px] text-[#ccff00]">touch_app</span>
+<span>CLICK TO REVERSE</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-space-xs">
+<span>Development &amp; Tools</span>
+</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Version control infrastructure, network profiling instruments, and robust API endpoints.
+                </p>
+</div>
+<!-- Skill Proficiency Neon Sliders -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Git & GitHub -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#ccff00] shadow-[0_0_6px_rgba(204,255,0,0.8)]"></span>Git &amp; GitHub VCS Workflows</span>
+<span class="text-[#ccff00] font-bold">95%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-[#ccff00] rounded-full shadow-[0_0_10px_rgba(204,255,0,0.8)]" style="width: 95%"></div>
+</div>
+</div>
+<!-- VS Code Automation & Extensions -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_6px_rgba(57,255,20,0.8)]"></span>VS Code Environment &amp; Shell Scripting</span>
+<span class="text-primary-container font-bold">93%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-fixed-dim to-primary-container rounded-full shadow-[0_0_10px_rgba(57,255,20,0.8)]" style="width: 93%"></div>
+</div>
+</div>
+<!-- Chrome DevTools & Profiling -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed shadow-[0_0_6px_rgba(96,255,153,0.8)]"></span>DevTools Diagnostic &amp; Performance Audit</span>
+<span class="text-secondary-fixed font-bold">90%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-fixed-dim to-secondary-fixed rounded-full shadow-[0_0_10px_rgba(96,255,153,0.8)]" style="width: 90%"></div>
+</div>
+</div>
+<!-- API Integration & Webhooks -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container shadow-[0_0_6px_rgba(52,255,141,0.8)]"></span>API Integration (REST / GraphQL)</span>
+<span class="text-secondary-container font-bold">92%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-on-secondary-container to-secondary-container rounded-full shadow-[0_0_10px_rgba(52,255,141,0.7)]" style="width: 92%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Tech Tags & Trigger Button -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pt-space-md relative z-10">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-space-xs py-1 rounded bg-surface-container border border-outline-variant/30 font-label-code text-label-code text-[#ccff00]">Postman</span>
+<span class="px-space-xs py-1 rounded bg-surface-container border border-outline-variant/30 font-label-code text-label-code text-primary-container">NPM/PNPM</span>
+<span class="px-space-xs py-1 rounded bg-surface-container border border-outline-variant/30 font-label-code text-label-code text-secondary-fixed">Linux Terminal</span>
+</div>
+<button class="flip-trigger-btn px-space-sm py-1.5 rounded-lg bg-surface-container-high border border-outline-variant/40 hover:border-[#ccff00] hover:bg-[#ccff00] hover:text-surface-container-lowest text-[#ccff00] transition-all font-label-code text-label-code uppercase flex items-center gap-1 shadow-sm" type="button">
+<span>INSPECT TOOLCHAIN</span>
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+</button>
+</div>
+</div>
+<!-- Back Face -->
+<div class="absolute inset-0 backface-hidden rotate-y-180 bg-surface-container-high/95 backdrop-blur-2xl p-space-lg rounded-xl border border-[#ccff00]/40 shadow-2xl flex flex-col justify-between overflow-hidden">
+<div class="absolute -bottom-8 -left-8 w-44 h-44 bg-[#ccff00]/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-[#ccff00] uppercase tracking-widest">// REVERSE TEL: CI/CD &amp; REPO MANAGEMENT</span>
+<button class="flip-back-btn p-1 rounded-md bg-surface-container hover:bg-surface-container-highest text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Terminal &amp; Diagnostic Pipeline</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-[#ccff00] font-bold font-label-code text-label-code">01. GIT TRUNKING</span>
+<span>Semantic commits, branch rebasing, merge resolutions, PR governance.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-primary-container font-bold font-label-code text-label-code">02. MEMORY PROFILER</span>
+<span>Heap snapshot tracking, memory leak containment, call tree optimization.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-secondary-fixed font-bold font-label-code text-label-code">03. REST CONTRACTS</span>
+<span>JSON schema validation, Bearer token cycles, idempotent payload execution.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-secondary-container font-bold font-label-code text-label-code">04. LOCAL PROXIES</span>
+<span>Mock servers, CORS bypass conduits, continuous local hot-reload chains.</span>
+</div>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/60 border border-outline-variant/20 flex items-center justify-between font-label-code text-[11px] text-outline relative z-10">
+<span>INTEGRATION STATUS: ZERO FRICTION</span>
+<span class="text-[#ccff00]">STABILITY: 100%</span>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 04: Advanced / Emerging Tech -->
+<article class="arsenal-card perspective-1000 w-full min-h-[460px] flex flex-col group" data-category="emerging">
+<div class="card-flip-inner relative w-full flex-1 transform-style-3d cursor-pointer rounded-xl">
+<!-- Front Face -->
+<div class="absolute inset-0 backface-hidden bg-surface-container-low/85 backdrop-blur-xl p-space-lg rounded-xl border border-outline-variant/40 shadow-xl flex flex-col justify-between overflow-hidden group-hover:border-primary-container/50 transition-colors">
+<!-- Neon Ambient Glow Corner -->
+<div class="absolute top-0 right-0 w-36 h-36 bg-primary-container/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-primary-container bg-primary-container/10 border border-primary-container/30 px-space-xs py-0.5 rounded">// MOD.04</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant uppercase tracking-wider">NEXT HORIZON</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-code text-[11px] text-outline">
+<span class="material-symbols-outlined text-[16px] text-primary-container">touch_app</span>
+<span>CLICK TO REVERSE</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-space-xs">
+<span>Advanced / Emerging Tech</span>
+</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Prompt engineering frameworks, automated agent pipelines, and dynamic hardware-accelerated WebGL.
+                </p>
+</div>
+<!-- Skill Proficiency Neon Sliders -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- AI Prompting & LLM Chaining -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_6px_rgba(57,255,20,0.8)]"></span>AI Prompt Engineering &amp; Few-Shot Logic</span>
+<span class="text-primary-container font-bold">96%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-fixed-dim via-primary-container to-[#ccff00] rounded-full shadow-[0_0_10px_rgba(57,255,20,0.8)]" style="width: 96%"></div>
+</div>
+</div>
+<!-- Automation Scripts & Web Scrapers -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed shadow-[0_0_6px_rgba(96,255,153,0.8)]"></span>Automation Scripts &amp; Daemon Pipelines</span>
+<span class="text-secondary-fixed font-bold">89%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-fixed-dim to-secondary-fixed rounded-full shadow-[0_0_10px_rgba(96,255,153,0.8)]" style="width: 89%"></div>
+</div>
+</div>
+<!-- WebGL & Canvas Graphics Basics -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#ccff00] shadow-[0_0_6px_rgba(204,255,0,0.8)]"></span>WebGL Shaders &amp; Canvas Rendering</span>
+<span class="text-[#ccff00] font-bold">82%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-[#ccff00] rounded-full shadow-[0_0_10px_rgba(204,255,0,0.8)]" style="width: 82%"></div>
+</div>
+</div>
+<!-- Generative Media Workflows -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container shadow-[0_0_6px_rgba(52,255,141,0.8)]"></span>Synthetic Visual Synthesis &amp; UI Generation</span>
+<span class="text-secondary-container font-bold">91%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-fixed-dim to-secondary-container rounded-full shadow-[0_0_10px_rgba(52,255,141,0.7)]" style="width: 91%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Tech Tags & Trigger Button -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pt-space-md relative z-10">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-space-xs py-1 rounded bg-surface-container border border-outline-variant/30 font-label-code text-label-code text-primary-container">Context Trees</span>
+<span class="px-space-xs py-1 rounded bg-surface-container border border-outline-variant/30 font-label-code text-label-code text-secondary-fixed">GLSL Shaders</span>
+<span class="px-space-xs py-1 rounded bg-surface-container border border-outline-variant/30 font-label-code text-label-code text-[#ccff00]">Agent Swarms</span>
+</div>
+<button class="flip-trigger-btn px-space-sm py-1.5 rounded-lg bg-surface-container-high border border-outline-variant/40 hover:border-primary-container hover:bg-primary-container hover:text-on-primary-container text-primary-container transition-all font-label-code text-label-code uppercase flex items-center gap-1 shadow-sm" type="button">
+<span>INSPECT SYNTHETIC NODE</span>
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+</button>
+</div>
+</div>
+<!-- Back Face -->
+<div class="absolute inset-0 backface-hidden rotate-y-180 bg-surface-container-high/95 backdrop-blur-2xl p-space-lg rounded-xl border border-primary-container/40 shadow-2xl flex flex-col justify-between overflow-hidden">
+<div class="absolute -bottom-8 -left-8 w-44 h-44 bg-primary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-primary-container uppercase tracking-widest">// REVERSE TEL: FRONTIER LABS</span>
+<button class="flip-back-btn p-1 rounded-md bg-surface-container hover:bg-surface-container-highest text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Autonomous &amp; GPU Spatial Vectoring</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-primary-container font-bold font-label-code text-label-code">01. RAG &amp; VECTOR PROMPTS</span>
+<span>Zero-shot taxonomy structuring, recursive contextual window pruning.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-secondary-fixed font-bold font-label-code text-label-code">02. CRON SCRIPT AUTOMATION</span>
+<span>Headless scraping, automated report synthesizers, persistent webhooks.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-[#ccff00] font-bold font-label-code text-label-code">03. FRAGMENT SHADERS</span>
+<span>Per-pixel math computations, noise fields, and interactive cursor distortions.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/20 flex flex-col gap-0.5">
+<span class="text-secondary-fixed-dim font-bold font-label-code text-label-code">04. AGENTIC FEEDBACK</span>
+<span>Multi-agent review chains validating code stability before compilation.</span>
+</div>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/60 border border-outline-variant/20 flex items-center justify-between font-label-code text-[11px] text-outline relative z-10">
+<span>RESEARCH HORIZON: ACTIVATED</span>
+<span class="text-primary-container">GPU ACCEL: ENABLED</span>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- Synthetic Proof Matrix / Live Workspace Telemetry Drawer -->
+<section class="w-full bg-surface-container-low/70 backdrop-blur-xl p-space-md lg:p-space-lg rounded-xl border border-outline-variant/40 shadow-xl flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">terminal</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Active Terminal Capability Index</span>
+</div>
+<div class="font-label-code text-label-code text-on-surface-variant flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="text-primary-container">LIVE EVALUATION PROTOCOL</span>
+</div>
+</div>
+<!-- Compact Bento Terminal Cells -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Module Cell 1 -->
+<div class="bg-surface-container-lowest/90 p-space-md rounded-xl border border-outline-variant/30 flex flex-col justify-between gap-space-sm shadow-md hover:border-primary-container/40 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-primary-container uppercase">EXECUTION RIGOR</span>
+<span class="font-label-telemetry text-label-telemetry text-outline">01 / SPEED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Zero bloat architecture. Optimized payload bundle sizes under <span class="text-primary-container font-semibold">45kb gzip</span> on production landing surfaces.
+          </p>
+<div class="flex items-center gap-space-xs font-label-code text-[11px] text-primary">
+<span class="material-symbols-outlined text-[15px] text-primary-container">bolt</span>
+<span>DOM Render: 4.2ms</span>
+</div>
+</div>
+<!-- Module Cell 2 -->
+<div class="bg-surface-container-lowest/90 p-space-md rounded-xl border border-outline-variant/30 flex flex-col justify-between gap-space-sm shadow-md hover:border-secondary-fixed/40 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-secondary-fixed uppercase">INTERFACE PRECISION</span>
+<span class="font-label-telemetry text-label-telemetry text-outline">02 / VISUAL</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Full compliance with high dynamic range cyberpunk contrast parameters, dynamic viewports, and sub-pixel glyph alignment.
+          </p>
+<div class="flex items-center gap-space-xs font-label-code text-[11px] text-secondary-fixed">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+<span>Pixel Precision: 100%</span>
+</div>
+</div>
+<!-- Module Cell 3 -->
+<div class="bg-surface-container-lowest/90 p-space-md rounded-xl border border-outline-variant/30 flex flex-col justify-between gap-space-sm shadow-md hover:border-[#ccff00]/40 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-[#ccff00] uppercase">EXPONENTIAL LEARNING</span>
+<span class="font-label-telemetry text-label-telemetry text-outline">03 / VELOCITY</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Rapid assimilation of evolving frontier frameworks, LLM integrations, and modern full-stack web standards within hours.
+          </p>
+<div class="flex items-center gap-space-xs font-label-code text-[11px] text-[#ccff00]">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+<span>Adaptation Cadence: Instant</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive Client Behavior for Filter Sorting and 3D Card Flipping -->
+<script>
+    (function initArsenalInteractions() {
+      // 3D Card Flip Mechanics
+      const cards = document.querySelectorAll('.arsenal-card');
+      
+      cards.forEach(card => {
+        const inner = card.querySelector('.card-flip-inner');
+        const triggerBtn = card.querySelector('.flip-trigger-btn');
+        const backBtn = card.querySelector('.flip-back-btn');
+
+        // Flip on inner card click (except when clicking direct links/sub-buttons)
+        inner.addEventListener('click', (e) => {
+          if (e.target.closest('.flip-back-btn')) {
+            inner.classList.remove('is-flipped');
+            return;
+          }
+          if (e.target.closest('.flip-trigger-btn')) {
+            inner.classList.add('is-flipped');
+            return;
+          }
+          // Toggle on standard card plate touch/click
+          inner.classList.toggle('is-flipped');
+        });
+
+        // Dedicated triggers
+        if (triggerBtn) {
+          triggerBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            inner.classList.add('is-flipped');
+          });
+        }
+        if (backBtn) {
+          backBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            inner.classList.remove('is-flipped');
+          });
+        }
+      });
+
+      // Interactive Category Filtering
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          // Reset all filter styles
+          filterButtons.forEach(b => {
+            b.className = 'filter-btn px-space-md py-space-xs rounded-lg font-label-code text-label-code uppercase transition-all duration-300 bg-surface-container text-on-surface-variant hover:text-primary-container hover:bg-surface-container-high border border-transparent hover:border-outline-variant/50';
+          });
+
+          // Highlight current active button
+          btn.className = 'filter-btn px-space-md py-space-xs rounded-lg font-label-code text-label-code uppercase transition-all duration-300 bg-primary-container text-surface-container-lowest font-bold shadow-[0_0_16px_rgba(57,255,20,0.45)] border border-primary-container';
+
+          // Apply visibility filtering to Arsenal Cards
+          cards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              card.style.display = 'flex';
+              // Trigger slight entry bounce
+              card.style.opacity = '0';
+              card.style.transform = 'scale(0.98)';
+              setTimeout(() => {
+                card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'scale(1)';
+              }, 20);
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="relative z-10 w-full bg-surface-container-lowest/90 border-t border-outline-variant/30 backdrop-blur-md mt-space-xl"><div class="w-full max-w-[1360px] mx-auto px-margin lg:px-space-xl py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-wide text-on-surface">ADITHYA</span><span class="px-space-xs py-0.5 rounded bg-surface-container-high border border-primary-container/30 font-label-code text-label-code text-primary-container">SYSTEM_RADIUM_ONLINE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">Architecting high-frequency synthetic interfaces and resilient software vectors.</p></div><div class="flex items-center gap-space-lg font-label-telemetry text-label-telemetry text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed shadow-[0_0_6px_rgba(96,255,153,0.8)]"></span><span>LATENCY: 12ms</span></div><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_6px_rgba(57,255,20,0.8)]"></span><span>UPTIME: 99.99%</span></div><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-[#ccff00] shadow-[0_0_6px_rgba(204,255,0,0.8)]"></span><span>REGION: AP-SOUTH</span></div></div><div class="font-label-telemetry text-label-telemetry text-outline text-center md:text-right">© 2025 ADITHYA // ALL RIGHTS RESERVED.</div></div></footer></body></html>

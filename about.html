@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>About Me // Adithya [Obsidian Radium]</title>
+  <meta name="description" content="Biography, engineering philosophy, academic background, and development environment of Adithya."/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#2ae500",
+            "inverse-on-surface": "#302f39",
+            "error-container": "#93000a",
+            "surface-dim": "#13131b",
+            "surface-container-high": "#292932",
+            "primary-fixed": "#79ff5b",
+            "secondary": "#f5fff3",
+            "primary-container": "#39ff14",
+            "surface-tint": "#2ae500",
+            "inverse-surface": "#e4e1ed",
+            "surface-container": "#1f1f27",
+            "on-tertiary": "#4a007f",
+            "on-error-container": "#ffdad6",
+            "outline-variant": "#3c4b35",
+            "secondary-container": "#34ff8d",
+            "on-surface": "#e4e1ed",
+            "on-tertiary-container": "#8537c9",
+            "secondary-fixed-dim": "#00e479",
+            "surface-variant": "#34343d",
+            "on-background": "#e4e1ed",
+            "surface-container-lowest": "#0d0d16",
+            "on-primary-container": "#107100",
+            "on-secondary": "#003919",
+            "inverse-primary": "#106e00",
+            "surface-container-low": "#1b1b23",
+            "error": "#ffb4ab",
+            "on-secondary-fixed-variant": "#005228",
+            "on-primary-fixed": "#022100",
+            "on-tertiary-fixed": "#2d0050",
+            "tertiary-fixed": "#f1dbff",
+            "tertiary-fixed-dim": "#deb7ff",
+            "secondary-fixed": "#60ff99",
+            "surface-bright": "#393842",
+            "on-secondary-container": "#007239",
+            "primary": "#efffe3",
+            "tertiary-container": "#edd4ff",
+            "on-secondary-fixed": "#00210c",
+            "on-surface-variant": "#baccb0",
+            "on-primary-fixed-variant": "#095300",
+            "outline": "#85967c",
+            "on-tertiary-fixed-variant": "#680eac",
+            "surface": "#13131b",
+            "on-primary": "#053900",
+            "background": "#13131b",
+            "tertiary": "#fff8fd",
+            "surface-container-highest": "#34343d",
+            "on-error": "#690005"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-sm": "0.5rem",
+            "margin-mobile": "1rem",
+            "space-md": "1rem",
+            "margin": "2.5rem",
+            "space-xl": "2.5rem",
+            "gutter-mobile": "0.75rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem"
+          },
+          fontFamily: {
+            "label-telemetry": ["Space Mono"],
+            "headline-md": ["Syne"],
+            "headline-lg": ["Syne"],
+            "headline-lg-mobile": ["Syne"],
+            "body-sm": ["Space Mono"],
+            "headline-sm": ["Syne"],
+            "display-hero": ["Syne"],
+            "body-lg": ["Space Mono"],
+            "label-code": ["Space Mono"],
+            "body-md": ["Space Mono"],
+            "display-hero-mobile": ["Syne"]
+          },
+          fontSize: {
+            "label-telemetry": ["10px", {"lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "400"}],
+            "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600"}],
+            "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+            "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+            "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+            "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+            "label-code": ["11px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700"}],
+            "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}],
+            "display-hero-mobile": ["38px", {"lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "800"}]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body class="bg-background font-body-md text-on-surface relative min-h-screen selection:bg-primary-container selection:text-on-primary">
+
+  <canvas id="cyber-particle-canvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-40 left-1/4 w-[500px] h-[500px] bg-primary-container/10 rounded-full blur-[128px]"></div>
+    <div class="absolute top-1/3 -right-20 w-[450px] h-[450px] bg-secondary-fixed/10 rounded-full blur-[140px]"></div>
+    <div class="absolute -bottom-20 left-1/3 w-[600px] h-[600px] bg-secondary-container/10 rounded-full blur-[150px]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(rgba(57,255,20,0.04)_1px,transparent_1px)] [background-size:24px_24px]"></div>
+  </div>
+
+  <!-- FIXED TACTICAL HUD NAVIGATION BAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_12px_rgba(0,0,0,0.6)]">
+    <div class="h-16 w-full max-w-[1360px] mx-auto px-margin lg:px-space-xl flex items-center justify-between gap-space-md">
+      <a href="index.html" class="flex items-center gap-space-sm shrink-0 group">
+        <img alt="Adithya Cyber Monogram Logo" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ALJJyrCpumzF9XyRhI9aJiDEZp3dP9cwxgBUjBGKvVK2vj5HOMeZf9sUmOUM6qxAx0ptjiAEAu7GIcZBgUtmMTFsUrPhopLGcr0TuMFQGvWoAEjOBhHmMd9hI0AoS8Lle42CPGGzx9tJV1pwhqHjJFzGqwRgvxIwN3IEdcqyQoHLnSPtOSpcodm-sWvh_TaC9DhGlvPqyG7mjoGl6v88rBmiXDIJEC18orAAcp6nMGBQRxmn"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface group-hover:text-primary-container transition-colors">ADITHYA</span>
+          <span class="font-label-code text-[10px] text-primary-container uppercase tracking-widest">RADIUM v4.0</span>
+        </div>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-xl">
+        <a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="index.html">Overview</a>
+        <a aria-current="page" class="px-space-md py-space-xs rounded-lg transition-colors bg-surface-container-high text-primary-container border border-primary-container/40 font-semibold shadow-[0_0_12px_rgba(57,255,20,0.2)]" href="about.html">About Me</a>
+        <a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="skills.html">Skills Arsenal</a>
+        <a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="projects.html">Projects &amp; Work</a>
+        <a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="milestones.html">Milestones &amp; Journey</a>
+        <a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-space-sm sm:gap-space-md shrink-0">
+        <button class="sound-toggle-btn p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-primary-container hover:border-primary-container/60 hover:bg-surface-container transition-all" title="Toggle Cyber Audio">
+          <span class="material-symbols-outlined text-[18px]">volume_up</span>
+        </button>
+
+        <div class="hidden sm:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-lowest border border-outline-variant/40 rounded-full">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+          </span>
+          <span class="font-label-code text-label-code text-primary-container tracking-widest">SYSTEM ONLINE</span>
+        </div>
+
+        <a href="about.html" class="flex items-center gap-space-xs pl-space-xs bg-surface-container-low/60 border border-outline-variant/30 rounded-full hover:border-primary-container/50 transition-colors">
+          <img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0nfuMotQ1j1Bj3MyDeN-6_5Mojen8av-SlNwx_pmRm5gxsDSxa4rYM5nbdWW1OvRwA5kCKiKyY0L9-1Au-JeSXJDbG0vu8cuanD8mog4pOsfJnfwY8XdAsdqdk72NIJDj1VgWWtKyZLph8EEBFH5H-sy_ZUDHOuyI6j_9VIFkX9uzuYGuNNVZllTer8gizs_HyDF5PfO4pnPCN51GbSXVp2-9aEhQa0JqxJN_RH6i"/>
+          <div class="hidden md:flex flex-col pr-space-sm">
+            <span class="font-label-code text-label-code text-on-surface">DEV.AUTH</span>
+            <span class="font-label-code text-[9px] leading-3 text-outline">SYNTH-RADIUM</span>
+          </div>
+        </a>
+
+        <button id="mobileMenuToggle" class="xl:hidden p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/40 text-on-surface hover:text-primary-container transition-colors" aria-label="Open Navigation Menu">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OVER NAVIGATION DRAWER -->
+  <div id="mobileMenuBackdrop" class="fixed inset-0 bg-surface-container-lowest/80 backdrop-blur-md z-50 hidden transition-opacity"></div>
+  <aside id="mobileMenuDrawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-surface-container-low border-l border-primary-container/30 z-50 p-space-lg flex flex-col justify-between transform translate-x-full transition-transform duration-300 shadow-2xl">
+    <div class="flex flex-col gap-space-lg">
+      <div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/30">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+          <span class="font-headline-sm text-on-surface">NODE NAVIGATION</span>
+        </div>
+        <button id="closeMobileMenu" class="p-1 rounded-md text-on-surface-variant hover:text-primary-container" aria-label="Close Menu">
+          <span class="material-symbols-outlined text-[22px]">close</span>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-2">
+        <a class="px-space-md py-2.5 rounded-lg font-headline-sm text-[16px] text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" href="index.html">Overview</a>
+        <a class="px-space-md py-2.5 rounded-lg font-headline-sm text-[16px] bg-surface-container-high text-primary-container font-semibold shadow-[0_0_12px_rgba(57,255,20,0.2)]" href="about.html">About Me</a>
+        <a class="px-space-md py-2.5 rounded-lg font-headline-sm text-[16px] text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" href="skills.html">Skills Arsenal</a>
+        <a class="px-space-md py-2.5 rounded-lg font-headline-sm text-[16px] text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" href="projects.html">Projects &amp; Work</a>
+        <a class="px-space-md py-2.5 rounded-lg font-headline-sm text-[16px] text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" href="milestones.html">Milestones &amp; Journey</a>
+        <a class="px-space-md py-2.5 rounded-lg font-headline-sm text-[16px] text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/30 font-label-code text-[11px] text-on-surface-variant">
+      <div class="flex items-center justify-between">
+        <span>SECURITY HASH:</span>
+        <span class="text-primary-container font-mono">#ADITHYA_7X</span>
+      </div>
+      <div class="flex items-center justify-between">
+        <span>LATENCY:</span>
+        <span class="text-secondary-fixed live-latency-val">4ms</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN VIEWPORT -->
+  <main class="relative z-10 w-full pt-16">
+    <div class="w-full max-w-[1360px] mx-auto px-margin lg:px-space-xl py-space-xl flex flex-col gap-space-xl">
+      
+      <!-- Top Dossier Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-md">
+        <div class="flex flex-col gap-space-xs">
+          <div class="flex items-center gap-space-xs font-label-code text-label-code text-primary-container">
+            <span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#39ff14]"></span>
+            <span>SYSTEM.INDEX // 01</span>
+            <span class="text-outline">/</span>
+            <span class="text-secondary-fixed">BIOMETRIC_PROFILE</span>
+          </div>
+          <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            ABOUT THE CREATOR <span class="text-outline-variant font-light">—</span> <span class="text-primary-container drop-shadow-[0_0_12px_rgba(57,255,20,0.3)]">ADITHYA</span>
+          </h1>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            Passionate computer science student, creative technologist, and builder bridging mathematical code paradigms with interactive sensory interfaces.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-space-sm">
+          <a href="contact.html" class="px-space-md py-space-xs rounded-lg bg-primary-container text-surface-container-lowest font-headline-sm text-[14px] font-bold shadow-[0_0_16px_rgba(57,255,20,0.4)] hover:shadow-[0_0_24px_rgba(57,255,20,0.7)] transition-all flex items-center gap-1">
+            <span>GET IN TOUCH</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Split Biography & Identity Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-start">
+        
+        <!-- Left: Holographic Portrait & Telemetry Card (5 cols) -->
+        <div class="lg:col-span-5 flex flex-col gap-space-md">
+          <div class="relative bg-surface-container-low/85 backdrop-blur-2xl rounded-2xl p-space-md border border-primary-container/30 shadow-[0_0_30px_rgba(57,255,20,0.12)]">
+            <div class="aspect-square w-full rounded-xl overflow-hidden bg-surface-container-highest relative border border-outline-variant/40 group">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0nfuMotQ1j1Bj3MyDeN-6_5Mojen8av-SlNwx_pmRm5gxsDSxa4rYM5nbdWW1OvRwA5kCKiKyY0L9-1Au-JeSXJDbG0vu8cuanD8mog4pOsfJnfwY8XdAsdqdk72NIJDj1VgWWtKyZLph8EEBFH5H-sy_ZUDHOuyI6j_9VIFkX9uzuYGuNNVZllTer8gizs_HyDF5PfO4pnPCN51GbSXVp2-9aEhQa0JqxJN_RH6i" alt="Adithya Portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+              <div class="absolute bottom-3 left-3 flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 border border-primary-container/40 font-label-code text-[11px] text-primary-container backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse shadow-[0_0_6px_#39ff14]"></span>
+                <span>STATUS: HIGH FOCUS MODE</span>
+              </div>
+            </div>
+
+            <!-- Metadata List -->
+            <div class="grid grid-cols-2 gap-space-sm pt-space-md font-label-code text-[11px]">
+              <div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/30 flex flex-col">
+                <span class="text-outline uppercase">CODENAME</span>
+                <span class="text-on-surface font-bold">ADITHYA</span>
+              </div>
+              <div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/30 flex flex-col">
+                <span class="text-outline uppercase">BASE STATION</span>
+                <span class="text-secondary-fixed font-bold">HYDERABAD, IN</span>
+              </div>
+              <div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/30 flex flex-col">
+                <span class="text-outline uppercase">DISCIPLINE</span>
+                <span class="text-primary-container font-bold">CSE &amp; GRAPHICS</span>
+              </div>
+              <div class="p-space-xs rounded bg-surface-container-lowest/80 border border-outline-variant/30 flex flex-col">
+                <span class="text-outline uppercase">SYSTEM HORIZON</span>
+                <span class="text-[#ccff00] font-bold">2026 ACTIVE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dev Rig Telemetry Box -->
+          <div class="p-space-md bg-surface-container-low/70 border border-outline-variant/30 rounded-xl flex flex-col gap-space-xs">
+            <span class="font-label-code text-label-code text-primary-container uppercase font-bold flex items-center gap-1">
+              <span class="material-symbols-outlined text-[16px]">developer_board</span>
+              PRIMARY WORKSTATION MATRIX
+            </span>
+            <div class="font-label-code text-[11px] text-on-surface-variant flex flex-col gap-1 pt-1">
+              <div class="flex justify-between border-b border-outline-variant/20 py-0.5">
+                <span class="text-outline">ARCH / OS:</span>
+                <span class="text-on-surface">Arch Linux + Windows Dual Node</span>
+              </div>
+              <div class="flex justify-between border-b border-outline-variant/20 py-0.5">
+                <span class="text-outline">COMPILER / RUNTIME:</span>
+                <span class="text-on-surface">Node.js 24 + Python 3.12</span>
+              </div>
+              <div class="flex justify-between border-b border-outline-variant/20 py-0.5">
+                <span class="text-outline">EDITOR:</span>
+                <span class="text-on-surface">VS Code [Vim Emulation + Starship]</span>
+              </div>
+              <div class="flex justify-between py-0.5">
+                <span class="text-outline">VIEWPORTS:</span>
+                <span class="text-secondary-fixed">Dual 4K HDR High-Refresh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: The Narrative & Core Engineering Philosophy (7 cols) -->
+        <div class="lg:col-span-7 flex flex-col gap-space-lg">
+          
+          <!-- Narrative Section -->
+          <div class="p-space-lg rounded-2xl bg-surface-container-low/80 backdrop-blur-xl border border-outline-variant/30 shadow-lg flex flex-col gap-space-md">
+            <h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+              <span class="text-primary-container">01 //</span> The Engineering Odyssey
+            </h2>
+            <div class="font-body-md text-body-md text-on-surface-variant leading-relaxed flex flex-col gap-space-sm">
+              <p>
+                Ever since compiling my first "Hello World", I've been fascinated by the alchemy of translating raw algorithmic concepts into visceral, interactive human experiences. As a student software engineer, my journey revolves around mastering full-stack software development, real-time computer graphics, and cognitive AI applications.
+              </p>
+              <p>
+                I believe that code shouldn't just be functional—it should be fast, elegant, and uncompromisingly beautiful. That philosophy gave birth to the <strong class="text-primary-container">Obsidian Radium</strong> design language: tactical cyber-brutalist dark surfaces illuminated by high-potency kinetic phosphor, delivering instantaneous feedback and surgical clarity.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4 Core Pillars Bento -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+            <div class="p-space-md rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 flex flex-col gap-space-xs hover:border-primary-container/40 transition-colors">
+              <span class="material-symbols-outlined text-primary-container text-[24px]">speed</span>
+              <h3 class="font-headline-sm text-[16px] text-on-surface font-bold">Zero-Bloat Latency</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Obsessed with sub-16ms render frames, lightweight JS bundles, and clean standard APIs without unnecessary framework bloat.
+              </p>
+            </div>
+
+            <div class="p-space-md rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 flex flex-col gap-space-xs hover:border-secondary-fixed/40 transition-colors">
+              <span class="material-symbols-outlined text-secondary-fixed text-[24px]">view_in_ar</span>
+              <h3 class="font-headline-sm text-[16px] text-on-surface font-bold">Spatial &amp; Shader Graphics</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Crafting interactive 3D WebGL scenes, GLSL particle shaders, and mathematical canvases that respond intuitively to user input.
+              </p>
+            </div>
+
+            <div class="p-space-md rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 flex flex-col gap-space-xs hover:border-[#ccff00]/40 transition-colors">
+              <span class="material-symbols-outlined text-[#ccff00] text-[24px]">psychology</span>
+              <h3 class="font-headline-sm text-[16px] text-on-surface font-bold">Cognitive AI Systems</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Implementing multi-agent task loops, real-time speech telemetry, streaming LLMs, and prompt-engineered workflows.
+              </p>
+            </div>
+
+            <div class="p-space-md rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 flex flex-col gap-space-xs hover:border-primary-fixed/40 transition-colors">
+              <span class="material-symbols-outlined text-primary-fixed text-[24px]">verified</span>
+              <h3 class="font-headline-sm text-[16px] text-on-surface font-bold">Deterministic Discipline</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Strict Git trunk-based development, semantic versioning, reproducible environments, and automated testing pipelines.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bottom Action Strip -->
+          <div class="p-space-md rounded-xl bg-surface-container-low/80 border border-outline-variant/30 flex items-center justify-between gap-space-md">
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-primary-container text-[24px]">terminal</span>
+              <span class="font-label-code text-[12px] text-on-surface">Curious about specific tools and framework proficiencies?</span>
+            </div>
+            <a href="skills.html" class="px-space-md py-1.5 rounded-lg bg-surface-container-high border border-primary-container/40 text-primary-container font-label-code text-label-code font-bold hover:bg-primary-container hover:text-surface-container-lowest transition-all shrink-0">
+              EXPLORE ARSENAL
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="relative z-10 w-full bg-surface-container-lowest/90 border-t border-outline-variant/30 backdrop-blur-md mt-space-xl">
+    <div class="w-full max-w-[1360px] mx-auto px-margin lg:px-space-xl py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+      <div class="flex flex-col items-center md:items-start gap-space-xs">
+        <div class="flex items-center gap-space-xs">
+          <span class="font-headline-sm text-headline-sm tracking-wide text-on-surface">ADITHYA</span>
+          <span class="px-space-xs py-0.5 rounded bg-surface-container-high border border-primary-container/30 font-label-code text-label-code text-primary-container">SYSTEM_RADIUM_ONLINE</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">Architecting high-frequency synthetic interfaces and resilient software vectors.</p>
+      </div>
+
+      <div class="flex items-center gap-space-lg font-label-telemetry text-label-telemetry text-on-surface-variant">
+        <div class="flex items-center gap-space-xs">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed shadow-[0_0_6px_rgba(96,255,153,0.8)]"></span>
+          <span>LATENCY: <span class="live-latency-val">4ms</span></span>
+        </div>
+        <div class="flex items-center gap-space-xs">
+          <span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_6px_rgba(57,255,20,0.8)]"></span>
+          <span>UPTIME: 99.99%</span>
+        </div>
+        <div class="flex items-center gap-space-xs">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#ccff00] shadow-[0_0_6px_rgba(204,255,0,0.8)]"></span>
+          <span>REGION: AP-SOUTH</span>
+        </div>
+      </div>
+
+      <div class="font-label-telemetry text-label-telemetry text-outline text-center md:text-right">
+        © 2026 ADITHYA // ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/cyber-core.js"></script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-fixed-dim": "#2ae500",
+          "inverse-on-surface": "#302f39",
+          "error-container": "#93000a",
+          "surface-dim": "#13131b",
+          "surface-container-high": "#292932",
+          "primary-fixed": "#79ff5b",
+          "secondary": "#f5fff3",
+          "primary-container": "#39ff14",
+          "surface-tint": "#2ae500",
+          "inverse-surface": "#e4e1ed",
+          "surface-container": "#1f1f27",
+          "on-tertiary": "#4a007f",
+          "on-error-container": "#ffdad6",
+          "outline-variant": "#3c4b35",
+          "secondary-container": "#34ff8d",
+          "on-surface": "#e4e1ed",
+          "on-tertiary-container": "#8537c9",
+          "secondary-fixed-dim": "#00e479",
+          "surface-variant": "#34343d",
+          "on-background": "#e4e1ed",
+          "surface-container-lowest": "#0d0d16",
+          "on-primary-container": "#107100",
+          "on-secondary": "#003919",
+          "inverse-primary": "#106e00",
+          "surface-container-low": "#1b1b23",
+          "error": "#ffb4ab",
+          "on-secondary-fixed-variant": "#005228",
+          "on-primary-fixed": "#022100",
+          "on-tertiary-fixed": "#2d0050",
+          "tertiary-fixed": "#f1dbff",
+          "tertiary-fixed-dim": "#deb7ff",
+          "secondary-fixed": "#60ff99",
+          "surface-bright": "#393842",
+          "on-secondary-container": "#007239",
+          "primary": "#efffe3",
+          "tertiary-container": "#edd4ff",
+          "on-secondary-fixed": "#00210c",
+          "on-surface-variant": "#baccb0",
+          "on-primary-fixed-variant": "#095300",
+          "outline": "#85967c",
+          "on-tertiary-fixed-variant": "#680eac",
+          "surface": "#13131b",
+          "on-primary": "#053900",
+          "background": "#13131b",
+          "tertiary": "#fff8fd",
+          "surface-container-highest": "#34343d",
+          "on-error": "#690005"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-md": "1rem",
+          "margin": "2.5rem",
+          "space-xl": "2.5rem",
+          "gutter-mobile": "0.75rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "label-telemetry": ["Space Mono"],
+          "headline-md": ["Syne"],
+          "headline-lg": ["Syne"],
+          "headline-lg-mobile": ["Syne"],
+          "body-sm": ["Space Mono"],
+          "headline-sm": ["Syne"],
+          "display-hero": ["Syne"],
+          "body-lg": ["Space Mono"],
+          "label-code": ["Space Mono"],
+          "body-md": ["Space Mono"],
+          "display-hero-mobile": ["Syne"]
+        },
+        "fontSize": {
+          "label-telemetry": ["10px", {"lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "400"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600"}],
+          "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-lg-mobile": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+          "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+          "label-code": ["11px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700"}],
+          "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}],
+          "display-hero-mobile": ["38px", {"lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "800"}]
+        }
+      }
+    }
+  };</script></head><body class="bg-background font-body-md text-on-surface relative min-h-screen selection:bg-primary-container selection:text-surface-container-lowest"><div class="fixed inset-0 pointer-events-none z-0 overflow-hidden"><div class="absolute -top-40 left-1/4 w-[500px] h-[500px] bg-primary-container/10 rounded-full blur-[140px]"></div><div class="absolute top-1/3 -right-20 w-[450px] h-[450px] bg-secondary-fixed-dim/10 rounded-full blur-[140px]"></div><div class="absolute -bottom-20 left-1/3 w-[600px] h-[600px] bg-[#ccff00]/5 rounded-full blur-[160px]"></div><div class="absolute inset-0 bg-[radial-gradient(rgba(57,255,20,0.04)_1px,transparent_1px)] [background-size:24px_24px]"></div></div><header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl border-b border-surface-container-high/60 shadow-[0_1px_12px_rgba(0,0,0,0.5)]"><div class="h-16 w-full max-w-[1360px] mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><img alt="Adithya Cyber Monogram Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCpumzF9XyRhI9aJiDEZp3dP9cwxgBUjBGKvVK2vj5HOMeZf9sUmOUM6qxAx0ptjiAEAu7GIcZBgUtmMTFsUrPhopLGcr0TuMFQGvWoAEjOBhHmMd9hI0AoS8Lle42CPGGzx9tJV1pwhqHjJFzGqwRgvxIwN3IEdcqyQoHLnSPtOSpcodm-sWvh_TaC9DhGlvPqyG7mjoGl6v88rBmiXDIJEC18orAAcp6nMGBQRxmn"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">ADITHYA</span><span class="font-label-code text-[10px] text-primary-container uppercase tracking-widest">CORE v4.0</span></div></div><nav class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-container-lowest/90 border border-surface-container-high/60 rounded-xl" data-active-classes="bg-surface-container-high text-primary-container font-semibold"><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="overview" href="#">Overview</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="about-me" href="#">About Me</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="skills-arsenal" href="#">Skills Arsenal</a><a aria-current="page" class="px-space-md py-space-xs rounded-lg transition-colors bg-surface-container-high text-primary-container font-semibold shadow-[0_0_12px_rgba(57,255,20,0.2)]" data-path="projects-and-work" href="#">Projects &amp; Work</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="milestones-and-journey" href="#">Milestones &amp; Journey</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-lowest border border-surface-container-high/70 rounded-full"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container shadow-[0_0_8px_#39ff14]"></span></span><span class="font-label-code text-label-code text-primary-container tracking-widest">SYSTEM ONLINE</span></div><div class="flex items-center gap-space-xs pl-space-xs bg-surface-container-low/70 border border-surface-container-high/60 rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0nfuMotQ1j1Bj3MyDeN-6_5Mojen8av-SlNwx_pmRm5gxsDSxa4rYM5nbdWW1OvRwA5kCKiKyY0L9-1Au-JeSXJDbG0vu8cuanD8mog4pOsfJnfwY8XdAsdqdk72NIJDj1VgWWtKyZLph8EEBFH5H-sy_ZUDHOuyI6j_9VIFkX9uzuYGuNNVZllTer8gizs_HyDF5PfO4pnPCN51GbSXVp2-9aEhQa0JqxJN_RH6i"/><div class="hidden md:flex flex-col pr-space-sm"><span class="font-label-code text-label-code text-on-surface">DEV.AUTH</span><span class="font-label-code text-[9px] leading-3 text-outline tracking-wider">RADIUM-NODE</span></div></div></div></div></header><main class="relative z-10 w-full pt-16"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1360px] mx-auto px-margin py-space-xl flex flex-col gap-space-xl relative">
+<!-- HUD Header & Breadcrumb Ribbon -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-label-code text-label-code text-primary-container">
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#39ff14]"></span>
+<span>SYSTEM.INDEX // 03</span>
+<span class="text-outline">/</span>
+<span class="text-secondary-fixed">EXECUTABLE_MODULES</span>
+</div>
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            MY CREATIONS <span class="text-outline-variant font-light">—</span> <span class="text-primary-container drop-shadow-[0_0_12px_rgba(57,255,20,0.3)]">SELECTED PROJECTS</span>
+</h1>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Engineered software vectors, cyber-kinetic user environments, and algorithmic sandboxes compiled with strict architectural fidelity.
+        </p>
+</div>
+<!-- Live Stream HUD telemetry badge -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-low/90 border border-surface-container-high/80 rounded-xl shadow-lg shrink-0">
+<div class="flex flex-col">
+<span class="font-label-code text-[10px] text-outline tracking-wider">DEPLOYED REPOS</span>
+<span class="font-headline-sm text-headline-sm text-primary-container drop-shadow-[0_0_6px_rgba(57,255,20,0.4)]">18 NODES</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-label-code text-[10px] text-outline tracking-wider">COMMITS (30D)</span>
+<span class="font-headline-sm text-headline-sm text-[#ccff00] drop-shadow-[0_0_6px_rgba(204,255,0,0.3)]">248 EVTS</span>
+</div>
+</div>
+</div>
+<!-- Filter Control Dock + Search & Status Track -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md p-space-xs bg-surface-container-lowest/80 backdrop-blur-xl border border-surface-container-high/70 rounded-xl shadow-lg">
+<!-- Filter Segment Buttons -->
+<div class="flex items-center gap-space-xs overflow-x-auto p-1" id="filter-container">
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-label-code text-label-code transition-all duration-200 bg-primary-container text-surface-container-lowest font-bold shadow-[0_0_16px_rgba(57,255,20,0.4)]" data-filter="all">
+          [ ALL PROJECTS ]
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-label-code text-label-code transition-all duration-200 text-on-surface-variant hover:text-primary-container hover:bg-surface-container-high" data-filter="web-apps">
+          WEB APPS (02)
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-label-code text-label-code transition-all duration-200 text-on-surface-variant hover:text-primary-container hover:bg-surface-container-high" data-filter="python-labs">
+          PYTHON LABS (01)
+        </button>
+</div>
+<!-- Metrics snippet -->
+<div class="flex items-center justify-end gap-space-md px-space-md py-space-xs text-on-surface-variant font-label-code text-label-code">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-container">terminal</span>
+<span class="hidden md:inline">FILTER_STATE:</span>
+<span class="text-on-surface font-bold" id="active-filter-label">ALL</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse shadow-[0_0_6px_#39ff14]"></span>
+<span class="text-primary-container font-semibold">HOT-RELOAD ON</span>
+</div>
+</div>
+</div>
+<!-- 3-Column Bento Showcase Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter items-stretch" id="projects-grid">
+<!-- Project 01: Cyber Portfolio -->
+<article class="project-card group flex flex-col justify-between bg-surface-container-low/75 backdrop-blur-xl border border-surface-container-high/80 rounded-xl p-space-md relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-primary-container/50 hover:shadow-[0_16px_36px_-8px_rgba(57,255,20,0.25)]" data-category="web-apps">
+<!-- Top Glow Ambient Node -->
+<div class="absolute -top-16 -right-16 w-36 h-36 bg-primary-container/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500 pointer-events-none"></div>
+<div class="flex flex-col gap-space-md">
+<!-- Card Header HUD Strip -->
+<div class="flex items-center justify-between font-label-code text-label-code">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest border border-surface-container-high text-primary-container font-bold">
+              // 001.SYS
+            </span>
+<div class="flex items-center gap-space-xs text-[#00ff88]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#00ff88] shadow-[0_0_6px_#00ff88]"></span>
+<span>LIVE_PROD</span>
+</div>
+</div>
+<!-- Visual Showcase Canvas -->
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container-lowest border border-surface-container-high/50 group-hover:shadow-inner transition-all">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A dark cyberpunk personal portfolio interface preview glowing in electric purple and cyan neon. Holographic geometric wireframe hexagons and particle nodes float across a sleek glass dashboard with code terminals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJcp0f7HxX0bIbRMX5T9LKGMgF3Tz2b6lahirystzPq_E_GI4VBvefI-vqGN4YB9ep9cuI48cNIAdMKyEX0hnDBojFfw6tmqyI4VTgUuKJU-ykbWezIHBHSCet6g8Vbus8wPqFz2l0NVsvwRBAjYzf4l7uWEE-3Cxlqj9gM5E3Gk1Lb-fEVJxBpT5TqE0-FFCUM_zby7sDYHjKQiZkub8evPgAVQJeNiscOhciwbLK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Floating Spec Badge -->
+<div class="absolute bottom-space-xs left-space-xs flex items-center gap-space-xs px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-md border border-primary-container/30 font-label-code text-label-telemetry text-primary-container">
+<span class="material-symbols-outlined text-[13px]">view_in_ar</span>
+<span>3D TILT ENGINE</span>
+</div>
+</div>
+<!-- Project Metadata -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-container transition-colors">
+                Personal Portfolio
+              </h2>
+<span class="font-label-code text-[11px] text-[#ccff00] font-semibold">CORE v4.0</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Cyber-kinetic digital experience with high-performance HTML/CSS/JS interactive particle mesh, dynamic HUD crosshairs, multi-layered glass strata, and responsive 3D micro-tilt cards.
+            </p>
+</div>
+<!-- Tech Stack Badges -->
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-surface-container-highest font-label-code text-[11px] text-primary-container flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-primary-container shadow-[0_0_4px_#39ff14]"></span>HTML5 Canvas
+            </span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-surface-container-highest font-label-code text-[11px] text-[#00ff88] flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-[#00ff88] shadow-[0_0_4px_#00ff88]"></span>Tailwind CSS
+            </span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-surface-container-highest font-label-code text-[11px] text-[#ccff00] flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-[#ccff00] shadow-[0_0_4px_#ccff00]"></span>Vanilla ES6+
+            </span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-surface-container-highest font-label-code text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-outline"></span>WebAudio API
+            </span>
+</div>
+</div>
+<!-- Action Links -->
+<div class="pt-space-md mt-space-md flex items-center justify-between gap-space-xs bg-surface-container-lowest/60 border-t border-surface-container-high/60 -mx-space-md -mb-space-md px-space-md py-space-sm rounded-b-xl">
+<a class="inline-flex items-center gap-space-xs font-label-code text-label-code text-on-surface-variant hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">code</span>
+<span>SOURCE_GIT</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded bg-primary-container/20 border border-primary-container/40 hover:bg-primary-container hover:text-surface-container-lowest text-primary-container transition-all duration-200 font-label-code text-label-code font-bold hover:shadow-[0_0_12px_rgba(57,255,20,0.5)]" href="#">
+<span>LIVE PREVIEW</span>
+<span class="material-symbols-outlined text-[15px]">arrow_outward</span>
+</a>
+</div>
+</article>
+<!-- Project 02: Python Practice Lab -->
+<article class="project-card group flex flex-col justify-between bg-surface-container-low/75 backdrop-blur-xl border border-surface-container-high/80 rounded-xl p-space-md relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#00ff88]/50 hover:shadow-[0_16px_36px_-8px_rgba(0,255,136,0.22)]" data-category="python-labs">
+<!-- Top Glow Ambient Node -->
+<div class="absolute -top-16 -right-16 w-36 h-36 bg-secondary-fixed-dim/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500 pointer-events-none"></div>
+<div class="flex flex-col gap-space-md">
+<!-- Card Header HUD Strip -->
+<div class="flex items-center justify-between font-label-code text-label-code">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest border border-surface-container-high text-[#00ff88] font-bold">
+              // 002.LAB
+            </span>
+<div class="flex items-center gap-space-xs text-[#00ff88]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#00ff88] shadow-[0_0_6px_#00ff88]"></span>
+<span>TESTED 100%</span>
+</div>
+</div>
+<!-- Visual Showcase Canvas -->
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container-lowest border border-surface-container-high/50 group-hover:shadow-inner transition-all">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A futuristic dark terminal display with neon cyan syntax highlighting for Python algorithms. Abstract algorithmic execution graphs, data pipelines, and matrix calculations illuminated on high-contrast obsidian glass." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD82ZWHBTJkvn0H6-_Dhs-PgW6Ta33jkcsLh-WWWZbJMOt1Yhzl9LKMJNyMGN3N_J4S8LZEZq70oJwIO6M9r0mUk7OYIm38ohFHDjbFjej8qmJejrDjYVkcfihT2uekxOxCJRJBgIlFULY3tO_u16ioOalgz73U5LZ3yGN7fPLx0hi3xrcjH3PATBMCXc_LYWcdL8fqjEYaYKPl8yfHFwzAHoZotTYa_Nyg453TVJtx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Floating Spec Badge -->
+<div class="absolute bottom-space-xs left-space-xs flex items-center gap-space-xs px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-md border border-[#00ff88]/30 font-label-code text-label-telemetry text-[#00ff88]">
+<span class="material-symbols-outlined text-[13px]">dataset</span>
+<span>48 BENCHMARKS</span>
+</div>
+</div>
+<!-- Project Metadata -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-[#00ff88] transition-colors">
+                Python Practice Lab
+              </h2>
+<span class="font-label-code text-[11px] text-primary-container font-semibold">ALGO.ENGINE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              A curated suite of high-efficiency algorithmic routines, asynchronous automation scrapers, dynamic programming paradigms, and automated unit-test harnesses.
+            </p>
+</div>
+<!-- Tech Stack Badges -->
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-surface-container-highest font-label-code text-[11px] text-[#00ff88] flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-[#00ff88] shadow-[0_0_4px_#00ff88]"></span>Python 3.12
+            </span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-surface-container-highest font-label-code text-[11px] text-primary-container flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-primary-container shadow-[0_0_4px_#39ff14]"></span>AsyncIO
+            </span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-surface-container-highest font-label-code text-[11px] text-[#ccff00] flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-[#ccff00] shadow-[0_0_4px_#ccff00]"></span>NumPy
+            </span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-surface-container-highest font-label-code text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-outline"></span>PyTest CI
+            </span>
+</div>
+</div>
+<!-- Action Links -->
+<div class="pt-space-md mt-space-md flex items-center justify-between gap-space-xs bg-surface-container-lowest/60 border-t border-surface-container-high/60 -mx-space-md -mb-space-md px-space-md py-space-sm rounded-b-xl">
+<a class="inline-flex items-center gap-space-xs font-label-code text-label-code text-on-surface-variant hover:text-[#00ff88] transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>GITHUB_REPO</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded bg-[#00ff88]/20 border border-[#00ff88]/40 hover:bg-[#00ff88] hover:text-surface-container-lowest text-[#00ff88] transition-all duration-200 font-label-code text-label-code font-bold hover:shadow-[0_0_12px_rgba(0,255,136,0.5)]" href="#">
+<span>DOCS &amp; TESTS</span>
+<span class="material-symbols-outlined text-[15px]">arrow_outward</span>
+</a>
+</div>
+</article>
+<!-- Project 03: Next Big Idea / AI Assistant Interface -->
+<article class="project-card group flex flex-col justify-between bg-surface-container-low/75 backdrop-blur-xl border border-surface-container-high/80 rounded-xl p-space-md relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#ccff00]/50 hover:shadow-[0_16px_36px_-8px_rgba(204,255,0,0.22)]" data-category="web-apps">
+<!-- Top Glow Ambient Node -->
+<div class="absolute -top-16 -right-16 w-36 h-36 bg-[#ccff00]/15 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500 pointer-events-none"></div>
+<div class="flex flex-col gap-space-md">
+<!-- Card Header HUD Strip -->
+<div class="flex items-center justify-between font-label-code text-label-code">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest border border-surface-container-high text-[#ccff00] font-bold">
+              // 003.NEXUS
+            </span>
+<div class="flex items-center gap-space-xs text-[#ccff00]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#ccff00] shadow-[0_0_6px_#ccff00] animate-ping"></span>
+<span>PROTOTYPE</span>
+</div>
+</div>
+<!-- Visual Showcase Canvas -->
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container-lowest border border-surface-container-high/50 group-hover:shadow-inner transition-all">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A hyper-futuristic generative AI assistant user interface with floating synthetic intelligence node diagrams, glowing magenta and electric violet neural waveforms, audio telemetry rings, and interactive prompt glass dialog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxBKDhPhObfKU3ONpOLOMqaVw4qFgi_6ytZOIsQCDD_U4hl1e97orSXq8SaNmXgKMskyKE1OmsxTfN3_3RK-qMe0ikyx4IfiLBj4WQLUaWRZzsMrkNJRF_lwo45L9w8OOfzgkLXZ-uN4eCs2p94gNvQDHtgS8kbGB8pUqZ_K9YoRKUiwA2_M79zy2Pvt7rzBtnsjUOBEQRWg0lZNIDVayd2PLNNmu6VUoZENVeY9fS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Floating Spec Badge -->
+<div class="absolute bottom-space-xs left-space-xs flex items-center gap-space-xs px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-md border border-[#ccff00]/30 font-label-code text-label-telemetry text-[#ccff00]">
+<span class="material-symbols-outlined text-[13px]">psychology</span>
+<span>NEURAL VECTOR v2</span>
+</div>
+</div>
+<!-- Project Metadata -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-[#ccff00] transition-colors">
+                AI Assistant Interface
+              </h2>
+<span class="font-label-code text-[11px] text-primary-container font-semibold">NEXT GEN</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Autonomous cognitive agent dashboard featuring natural language command routing, multi-model response streaming, real-time waveform visualization, and dynamic context caching.
+            </p>
+</div>
+<!-- Tech Stack Badges -->
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-surface-container-highest font-label-code text-[11px] text-[#ccff00] flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-[#ccff00] shadow-[0_0_4px_#ccff00]"></span>React 19 / Vite
+            </span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-surface-container-highest font-label-code text-[11px] text-[#00ff88] flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-[#00ff88] shadow-[0_0_4px_#00ff88]"></span>FastAPI
+            </span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-surface-container-highest font-label-code text-[11px] text-primary-container flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-primary-container shadow-[0_0_4px_#39ff14]"></span>WebSockets
+            </span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-surface-container-highest font-label-code text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-outline"></span>OpenAI API
+            </span>
+</div>
+</div>
+<!-- Action Links -->
+<div class="pt-space-md mt-space-md flex items-center justify-between gap-space-xs bg-surface-container-lowest/60 border-t border-surface-container-high/60 -mx-space-md -mb-space-md px-space-md py-space-sm rounded-b-xl">
+<a class="inline-flex items-center gap-space-xs font-label-code text-label-code text-on-surface-variant hover:text-[#ccff00] transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+<span>PUBLIC_REPO</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded bg-[#ccff00]/20 border border-[#ccff00]/40 hover:bg-[#ccff00] hover:text-surface-container-lowest text-[#ccff00] transition-all duration-200 font-label-code text-label-code font-bold hover:shadow-[0_0_12px_rgba(204,255,0,0.5)]" href="#">
+<span>RUN PROTOTYPE</span>
+<span class="material-symbols-outlined text-[15px]">arrow_outward</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Supplementary Micro-Bento: Engineering Architecture Telemetry -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter pt-space-md">
+<!-- Spec Box 1 -->
+<div class="p-space-md bg-surface-container-low/80 border border-surface-container-high/60 rounded-xl flex items-start gap-space-md">
+<div class="p-space-xs rounded-lg bg-surface-container-high border border-primary-container/30 text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+</div>
+<div class="flex flex-col gap-space-xs min-w-0">
+<span class="font-label-code text-[10px] text-primary-container tracking-widest uppercase font-bold">PIPELINE INTEGRITY</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Deterministic Code</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continuous integration, zero-bloat standard libraries, and strictly typed component interfaces.</p>
+</div>
+</div>
+<!-- Spec Box 2 -->
+<div class="p-space-md bg-surface-container-low/80 border border-surface-container-high/60 rounded-xl flex items-start gap-space-md">
+<div class="p-space-xs rounded-lg bg-surface-container-high border border-[#00ff88]/30 text-[#00ff88] shrink-0">
+<span class="material-symbols-outlined text-[24px]">speed</span>
+</div>
+<div class="flex flex-col gap-space-xs min-w-0">
+<span class="font-label-code text-[10px] text-[#00ff88] tracking-widest uppercase font-bold">LATENCY SENSITIVE</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Sub-16ms Framerates</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hardware-accelerated transforms, zero runtime layout thrashing, and native SVG rendering.</p>
+</div>
+</div>
+<!-- Spec Box 3 -->
+<div class="p-space-md bg-surface-container-low/80 border border-surface-container-high/60 rounded-xl flex items-start gap-space-md">
+<div class="p-space-xs rounded-lg bg-surface-container-high border border-[#ccff00]/30 text-[#ccff00] shrink-0">
+<span class="material-symbols-outlined text-[24px]">shield</span>
+</div>
+<div class="flex flex-col gap-space-xs min-w-0">
+<span class="font-label-code text-[10px] text-[#ccff00] tracking-widest uppercase font-bold">DEPLOYMENT STATUS</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Always Observable</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live telemetry hooks, open-source code repositories, and verifiable production runs.</p>
+</div>
+</div>
+</div>
+<!-- Bottom Callout Anchor -->
+<div class="mt-space-md p-space-lg rounded-xl bg-gradient-to-r from-surface-container-low via-surface-container to-surface-container-low border border-surface-container-high flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest border border-primary-container/30 flex items-center justify-center text-primary-container shrink-0 shadow-[0_0_12px_rgba(57,255,20,0.2)]">
+<span class="material-symbols-outlined text-[28px]">rocket_launch</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Seeking a Custom Systems Solution?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Currently taking select freelance architecture roles and experimental creative projects.</span>
+</div>
+</div>
+<a class="px-space-lg py-space-sm bg-primary-container text-surface-container-lowest font-headline-sm text-[15px] font-bold rounded-lg hover:shadow-[0_0_28px_rgba(57,255,20,0.55)] transition-all shrink-0 flex items-center gap-space-xs hover:scale-[1.02]" href="#">
+<span>INITIALIZE TRANSMISSION</span>
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    const activeLabel = document.getElementById('active-filter-label');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // Toggle active button style
+        filterButtons.forEach(b => {
+          b.className = 'filter-btn px-space-md py-space-xs rounded-lg font-label-code text-label-code transition-all duration-200 text-on-surface-variant hover:text-primary-container hover:bg-surface-container-high';
+        });
+        btn.className = 'filter-btn px-space-md py-space-xs rounded-lg font-label-code text-label-code transition-all duration-200 bg-primary-container text-surface-container-lowest font-bold shadow-[0_0_16px_rgba(57,255,20,0.4)]';
+
+        // Update telemetry label
+        if (activeLabel) {
+          activeLabel.textContent = filter.toUpperCase().replace('-', ' ');
+        }
+
+        // Filter cards with smooth scale/fade
+        projectCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.style.display = 'flex';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            }, 10);
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(8px)';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 200);
+          }
+        });
+      });
+    });
+  })();
+</script></main><footer class="relative z-10 w-full bg-surface-container-lowest/90 border-t border-surface-container-high/60 backdrop-blur-md mt-space-xl"><div class="w-full max-w-[1360px] mx-auto px-margin py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-wide text-on-surface">ADITHYA</span><span class="px-space-xs py-0.5 rounded bg-surface-container-high border border-primary-container/30 font-label-code text-[10px] text-primary-container font-semibold">SYSTEM_CORE_ONLINE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">Architecting high-frequency synthetic interfaces and resilient software vectors.</p></div><div class="flex items-center gap-space-lg font-label-code text-label-code text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-[#00ff88] shadow-[0_0_6px_#00ff88]"></span><span>LATENCY: 12ms</span></div><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_6px_#39ff14]"></span><span>UPTIME: 99.99%</span></div><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-[#ccff00] shadow-[0_0_6px_#ccff00]"></span><span>REGION: AP-SOUTH</span></div></div><div class="font-label-code text-[11px] text-outline text-center md:text-right">© 2025 ADITHYA // ALL RIGHTS RESERVED.</div></div></footer></body></html>

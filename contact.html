@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Contact &amp; Transmission // Adithya [Obsidian Radium]</title>
+  <meta name="description" content="Direct neural transmission link to Adithya. Inquire about internships, software engineering roles, and collaborative projects."/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#2ae500",
+            "inverse-on-surface": "#302f39",
+            "error-container": "#93000a",
+            "surface-dim": "#13131b",
+            "surface-container-high": "#292932",
+            "primary-fixed": "#79ff5b",
+            "secondary": "#f5fff3",
+            "primary-container": "#39ff14",
+            "surface-tint": "#2ae500",
+            "inverse-surface": "#e4e1ed",
+            "surface-container": "#1f1f27",
+            "on-tertiary": "#4a007f",
+            "on-error-container": "#ffdad6",
+            "outline-variant": "#3c4b35",
+            "secondary-container": "#34ff8d",
+            "on-surface": "#e4e1ed",
+            "on-tertiary-container": "#8537c9",
+            "secondary-fixed-dim": "#00e479",
+            "surface-variant": "#34343d",
+            "on-background": "#e4e1ed",
+            "surface-container-lowest": "#0d0d16",
+            "on-primary-container": "#107100",
+            "on-secondary": "#003919",
+            "inverse-primary": "#106e00",
+            "surface-container-low": "#1b1b23",
+            "error": "#ffb4ab",
+            "on-secondary-fixed-variant": "#005228",
+            "on-primary-fixed": "#022100",
+            "on-tertiary-fixed": "#2d0050",
+            "tertiary-fixed": "#f1dbff",
+            "tertiary-fixed-dim": "#deb7ff",
+            "secondary-fixed": "#60ff99",
+            "surface-bright": "#393842",
+            "on-secondary-container": "#007239",
+            "primary": "#efffe3",
+            "tertiary-container": "#edd4ff",
+            "on-secondary-fixed": "#00210c",
+            "on-surface-variant": "#baccb0",
+            "on-primary-fixed-variant": "#095300",
+            "outline": "#85967c",
+            "on-tertiary-fixed-variant": "#680eac",
+            "surface": "#13131b",
+            "on-primary": "#053900",
+            "background": "#13131b",
+            "tertiary": "#fff8fd",
+            "surface-container-highest": "#34343d",
+            "on-error": "#690005"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-sm": "0.5rem",
+            "margin-mobile": "1rem",
+            "space-md": "1rem",
+            "margin": "2.5rem",
+            "space-xl": "2.5rem",
+            "gutter-mobile": "0.75rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem"
+          },
+          fontFamily: {
+            "label-telemetry": ["Space Mono"],
+            "headline-md": ["Syne"],
+            "headline-lg": ["Syne"],
+            "headline-lg-mobile": ["Syne"],
+            "body-sm": ["Space Mono"],
+            "headline-sm": ["Syne"],
+            "display-hero": ["Syne"],
+            "body-lg": ["Space Mono"],
+            "label-code": ["Space Mono"],
+            "body-md": ["Space Mono"],
+            "display-hero-mobile": ["Syne"]
+          },
+          fontSize: {
+            "label-telemetry": ["10px", {"lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "400"}],
+            "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600"}],
+            "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+            "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+            "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+            "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+            "label-code": ["11px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700"}],
+            "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}],
+            "display-hero-mobile": ["38px", {"lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "800"}]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body class="bg-background font-body-md text-on-surface relative min-h-screen selection:bg-primary-container selection:text-on-primary">
+
+  <canvas id="cyber-particle-canvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-40 left-1/4 w-[500px] h-[500px] bg-primary-container/10 rounded-full blur-[128px]"></div>
+    <div class="absolute top-1/3 -right-20 w-[450px] h-[450px] bg-secondary-fixed/10 rounded-full blur-[140px]"></div>
+    <div class="absolute -bottom-20 left-1/3 w-[600px] h-[600px] bg-secondary-container/10 rounded-full blur-[150px]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(rgba(57,255,20,0.04)_1px,transparent_1px)] [background-size:24px_24px]"></div>
+  </div>
+
+  <!-- FIXED TACTICAL HUD NAVIGATION BAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_12px_rgba(0,0,0,0.6)]">
+    <div class="h-16 w-full max-w-[1360px] mx-auto px-margin lg:px-space-xl flex items-center justify-between gap-space-md">
+      <a href="index.html" class="flex items-center gap-space-sm shrink-0 group">
+        <img alt="Adithya Cyber Monogram Logo" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ALJJyrCpumzF9XyRhI9aJiDEZp3dP9cwxgBUjBGKvVK2vj5HOMeZf9sUmOUM6qxAx0ptjiAEAu7GIcZBgUtmMTFsUrPhopLGcr0TuMFQGvWoAEjOBhHmMd9hI0AoS8Lle42CPGGzx9tJV1pwhqHjJFzGqwRgvxIwN3IEdcqyQoHLnSPtOSpcodm-sWvh_TaC9DhGlvPqyG7mjoGl6v88rBmiXDIJEC18orAAcp6nMGBQRxmn"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface group-hover:text-primary-container transition-colors">ADITHYA</span>
+          <span class="font-label-code text-[10px] text-primary-container uppercase tracking-widest">RADIUM v4.0</span>
+        </div>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-xl">
+        <a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="index.html">Overview</a>
+        <a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="about.html">About Me</a>
+        <a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="skills.html">Skills Arsenal</a>
+        <a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="projects.html">Projects &amp; Work</a>
+        <a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="milestones.html">Milestones &amp; Journey</a>
+        <a aria-current="page" class="px-space-md py-space-xs rounded-lg transition-colors bg-surface-container-high text-primary-container border border-primary-container/40 font-semibold shadow-[0_0_12px_rgba(57,255,20,0.2)]" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-space-sm sm:gap-space-md shrink-0">
+        <button class="sound-toggle-btn p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-primary-container hover:border-primary-container/60 hover:bg-surface-container transition-all" title="Toggle Cyber Audio">
+          <span class="material-symbols-outlined text-[18px]">volume_up</span>
+        </button>
+
+        <div class="hidden sm:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-lowest border border-outline-variant/40 rounded-full">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+          </span>
+          <span class="font-label-code text-label-code text-primary-container tracking-widest">SYSTEM ONLINE</span>
+        </div>
+
+        <a href="about.html" class="flex items-center gap-space-xs pl-space-xs bg-surface-container-low/60 border border-outline-variant/30 rounded-full hover:border-primary-container/50 transition-colors">
+          <img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0nfuMotQ1j1Bj3MyDeN-6_5Mojen8av-SlNwx_pmRm5gxsDSxa4rYM5nbdWW1OvRwA5kCKiKyY0L9-1Au-JeSXJDbG0vu8cuanD8mog4pOsfJnfwY8XdAsdqdk72NIJDj1VgWWtKyZLph8EEBFH5H-sy_ZUDHOuyI6j_9VIFkX9uzuYGuNNVZllTer8gizs_HyDF5PfO4pnPCN51GbSXVp2-9aEhQa0JqxJN_RH6i"/>
+          <div class="hidden md:flex flex-col pr-space-sm">
+            <span class="font-label-code text-label-code text-on-surface">DEV.AUTH</span>
+            <span class="font-label-code text-[9px] leading-3 text-outline">SYNTH-RADIUM</span>
+          </div>
+        </a>
+
+        <button id="mobileMenuToggle" class="xl:hidden p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/40 text-on-surface hover:text-primary-container transition-colors" aria-label="Open Navigation Menu">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OVER NAVIGATION DRAWER -->
+  <div id="mobileMenuBackdrop" class="fixed inset-0 bg-surface-container-lowest/80 backdrop-blur-md z-50 hidden transition-opacity"></div>
+  <aside id="mobileMenuDrawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-surface-container-low border-l border-primary-container/30 z-50 p-space-lg flex flex-col justify-between transform translate-x-full transition-transform duration-300 shadow-2xl">
+    <div class="flex flex-col gap-space-lg">
+      <div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/30">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+          <span class="font-headline-sm text-on-surface">NODE NAVIGATION</span>
+        </div>
+        <button id="closeMobileMenu" class="p-1 rounded-md text-on-surface-variant hover:text-primary-container" aria-label="Close Menu">
+          <span class="material-symbols-outlined text-[22px]">close</span>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-2">
+        <a class="px-space-md py-2.5 rounded-lg font-headline-sm text-[16px] text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" href="index.html">Overview</a>
+        <a class="px-space-md py-2.5 rounded-lg font-headline-sm text-[16px] text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" href="about.html">About Me</a>
+        <a class="px-space-md py-2.5 rounded-lg font-headline-sm text-[16px] text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" href="skills.html">Skills Arsenal</a>
+        <a class="px-space-md py-2.5 rounded-lg font-headline-sm text-[16px] text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" href="projects.html">Projects &amp; Work</a>
+        <a class="px-space-md py-2.5 rounded-lg font-headline-sm text-[16px] text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" href="milestones.html">Milestones &amp; Journey</a>
+        <a class="px-space-md py-2.5 rounded-lg font-headline-sm text-[16px] bg-surface-container-high text-primary-container font-semibold shadow-[0_0_12px_rgba(57,255,20,0.2)]" href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/30 font-label-code text-[11px] text-on-surface-variant">
+      <div class="flex items-center justify-between">
+        <span>SECURITY HASH:</span>
+        <span class="text-primary-container font-mono">#ADITHYA_7X</span>
+      </div>
+      <div class="flex items-center justify-between">
+        <span>LATENCY:</span>
+        <span class="text-secondary-fixed live-latency-val">4ms</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN VIEWPORT -->
+  <main class="relative z-10 w-full pt-16">
+    <div class="w-full max-w-[1360px] mx-auto px-margin lg:px-space-xl py-space-xl flex flex-col gap-space-xl">
+      
+      <!-- Top Dossier Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-md">
+        <div class="flex flex-col gap-space-xs">
+          <div class="flex items-center gap-space-xs font-label-code text-label-code text-primary-container">
+            <span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#39ff14]"></span>
+            <span>SYSTEM.INDEX // 05</span>
+            <span class="text-outline">/</span>
+            <span class="text-secondary-fixed">COMM_GATEWAY</span>
+          </div>
+          <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            INITIALIZE TRANSMISSION <span class="text-outline-variant font-light">—</span> <span class="text-primary-container drop-shadow-[0_0_12px_rgba(57,255,20,0.3)]">DIRECT UPLINK</span>
+          </h1>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            Have an exciting internship opportunity, open-source project collaboration, or technical inquiry? Dispatch a direct telemetric signal below.
+          </p>
+        </div>
+
+        <!-- Transmission Status Indicator -->
+        <div class="flex items-center gap-space-xs p-space-sm bg-surface-container-low/90 border border-outline-variant/30 rounded-xl">
+          <span id="formStatusOrb" class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#39ff14]"></span>
+          <span id="formStatusText" class="font-label-code text-[11px] text-primary-container font-bold">READY FOR TRANSMISSION</span>
+        </div>
+      </div>
+
+      <!-- Transmission Grid (Split Form & Communication Matrix) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-start">
+        
+        <!-- Left: Interactive Cyber Transmission Form (7 cols) -->
+        <div class="lg:col-span-7 bg-surface-container-low/85 backdrop-blur-xl p-space-lg rounded-2xl border border-primary-container/30 shadow-2xl flex flex-col gap-space-md">
+          <div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[20px] text-primary-container">cell_tower</span>
+              <span class="font-headline-sm text-[16px] text-on-surface uppercase">PACKET COMPOSER</span>
+            </div>
+            <span class="font-label-telemetry text-label-telemetry text-outline">ENCRYPTION: AES-256</span>
+          </div>
+
+          <form id="contactForm" class="flex flex-col gap-space-md pt-space-xs">
+            <!-- Name & Email Row -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+              <div class="flex flex-col gap-1">
+                <label for="senderName" class="font-label-code text-[11px] text-on-surface-variant uppercase">
+                  OPERATOR NAME <span class="text-primary-container">*</span>
+                </label>
+                <input id="senderName" type="text" required placeholder="e.g., Alex Mercer" class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded-lg px-3 py-2 text-on-surface font-body-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all"/>
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <label for="senderEmail" class="font-label-code text-[11px] text-on-surface-variant uppercase">
+                  RETURN VECTOR (EMAIL) <span class="text-primary-container">*</span>
+                </label>
+                <input id="senderEmail" type="email" required placeholder="alex@venturelabs.io" class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded-lg px-3 py-2 text-on-surface font-body-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all"/>
+              </div>
+            </div>
+
+            <!-- Subject / Topic Dropdown -->
+            <div class="flex flex-col gap-1">
+              <label for="transmissionTopic" class="font-label-code text-[11px] text-on-surface-variant uppercase">
+                TRANSMISSION CLASSIFICATION
+              </label>
+              <select id="transmissionTopic" class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded-lg px-3 py-2 text-on-surface font-body-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all">
+                <option value="internship">Internship Opportunity (Summer/Fall 2026)</option>
+                <option value="freelance">Custom Web Architecture / Freelance</option>
+                <option value="collaboration">Open-Source Project Collaboration</option>
+                <option value="networking">Tech Networking / Coffee &amp; Code</option>
+              </select>
+            </div>
+
+            <!-- Message Body -->
+            <div class="flex flex-col gap-1">
+              <label for="transmissionBody" class="font-label-code text-[11px] text-on-surface-variant uppercase">
+                ENCRYPTED PAYLOAD (MESSAGE) <span class="text-primary-container">*</span>
+              </label>
+              <textarea id="transmissionBody" required rows="5" placeholder="State your mission objective, proposed collaboration scope, or inquiry parameters..." class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded-lg px-3 py-2 text-on-surface font-body-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button id="submitBtn" type="submit" class="w-full py-space-sm rounded-lg bg-primary-container text-surface-container-lowest font-headline-sm text-[15px] font-bold shadow-[0_0_24px_rgba(57,255,20,0.45)] hover:shadow-[0_0_36px_rgba(57,255,20,0.7)] hover:bg-primary-fixed transition-all duration-300 flex items-center justify-center gap-space-xs">
+              <span>TRANSMIT PACKET</span>
+              <span class="material-symbols-outlined text-[18px]">send</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Direct Channels & Telemetry Node Info (5 cols) -->
+        <div class="lg:col-span-5 flex flex-col gap-space-md">
+          
+          <!-- Channel 1: Primary Email -->
+          <div class="p-space-md rounded-xl bg-surface-container-low/80 border border-outline-variant/30 flex items-start justify-between gap-space-md hover:border-primary-container/40 transition-colors">
+            <div class="flex items-start gap-space-sm">
+              <div class="p-2 rounded-lg bg-surface-container text-primary-container border border-primary-container/30">
+                <span class="material-symbols-outlined text-[20px]">mail</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-telemetry text-label-telemetry text-outline uppercase">PRIMARY ROUTE</span>
+                <span class="font-headline-sm text-[15px] text-on-surface font-semibold">Email Communication</span>
+                <span class="font-label-code text-[12px] text-secondary-fixed mt-0.5">adithya.dev@nexus.corp</span>
+              </div>
+            </div>
+            <button class="copy-btn p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary-container" data-copy="adithya.dev@nexus.corp" title="Copy Email">
+              <span class="material-symbols-outlined text-[18px]">content_copy</span>
+            </button>
+          </div>
+
+          <!-- Channel 2: GitHub Repository -->
+          <div class="p-space-md rounded-xl bg-surface-container-low/80 border border-outline-variant/30 flex items-start justify-between gap-space-md hover:border-secondary-fixed/40 transition-colors">
+            <div class="flex items-start gap-space-sm">
+              <div class="p-2 rounded-lg bg-surface-container text-secondary-fixed border border-secondary-fixed/30">
+                <span class="material-symbols-outlined text-[20px]">code</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-telemetry text-label-telemetry text-outline uppercase">SOURCE CONTROL</span>
+                <span class="font-headline-sm text-[15px] text-on-surface font-semibold">GitHub Organization</span>
+                <span class="font-label-code text-[12px] text-on-surface-variant mt-0.5">github.com/adithyadinakarbk/victory</span>
+              </div>
+            </div>
+            <a href="https://github.com/adithyadinakarbk/victory" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary-fixed" title="Open GitHub">
+              <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+            </a>
+          </div>
+
+          <!-- Channel 3: Discord / Synth Matrix -->
+          <div class="p-space-md rounded-xl bg-surface-container-low/80 border border-outline-variant/30 flex items-start justify-between gap-space-md hover:border-[#ccff00]/40 transition-colors">
+            <div class="flex items-start gap-space-sm">
+              <div class="p-2 rounded-lg bg-surface-container text-[#ccff00] border border-[#ccff00]/30">
+                <span class="material-symbols-outlined text-[20px]">forum</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-telemetry text-label-telemetry text-outline uppercase">REALTIME CHAT</span>
+                <span class="font-headline-sm text-[15px] text-on-surface font-semibold">Discord Node</span>
+                <span class="font-label-code text-[12px] text-on-surface-variant mt-0.5">adithya.synth#0001</span>
+              </div>
+            </div>
+            <button class="copy-btn p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-[#ccff00]" data-copy="adithya.synth#0001" title="Copy Discord">
+              <span class="material-symbols-outlined text-[18px]">content_copy</span>
+            </button>
+          </div>
+
+          <!-- Availability & Location Box -->
+          <div class="p-space-md rounded-xl bg-surface-container-lowest/90 border border-primary-container/20 flex flex-col gap-space-xs font-label-code text-[11px]">
+            <div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+              <span class="text-outline uppercase">GEOGRAPHIC NODE:</span>
+              <span class="text-on-surface font-bold">Hyderabad, India (AP-SOUTH)</span>
+            </div>
+            <div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+              <span class="text-outline uppercase">LOCAL TIMEZONE:</span>
+              <span class="text-secondary-fixed font-bold">IST (UTC +5:30)</span>
+            </div>
+            <div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+              <span class="text-outline uppercase">RESPONSE LATENCY:</span>
+              <span class="text-primary-container font-bold">&lt; 12 Hours Guaranteed</span>
+            </div>
+            <div class="flex items-center justify-between pt-1">
+              <span class="text-outline uppercase">HIRING HORIZON:</span>
+              <span class="text-[#ccff00] font-bold">Open for Summer 2026 Roles</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- INTERACTIVE TOAST NOTIFICATION -->
+  <div id="cyberToast" class="fixed bottom-6 right-6 z-50 hidden max-w-md p-space-md rounded-xl bg-surface-container-lowest/95 border border-primary-container shadow-[0_0_24px_rgba(57,255,20,0.3)] backdrop-blur-2xl transition-all duration-300 transform translate-y-10 opacity-0 flex items-center gap-3">
+    <span class="material-symbols-outlined text-primary-container text-[22px]">verified</span>
+    <span id="toastMessage" class="font-label-code text-[12px] text-on-surface font-medium"></span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="relative z-10 w-full bg-surface-container-lowest/90 border-t border-outline-variant/30 backdrop-blur-md mt-space-xl">
+    <div class="w-full max-w-[1360px] mx-auto px-margin lg:px-space-xl py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+      <div class="flex flex-col items-center md:items-start gap-space-xs">
+        <div class="flex items-center gap-space-xs">
+          <span class="font-headline-sm text-headline-sm tracking-wide text-on-surface">ADITHYA</span>
+          <span class="px-space-xs py-0.5 rounded bg-surface-container-high border border-primary-container/30 font-label-code text-label-code text-primary-container">SYSTEM_RADIUM_ONLINE</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">Architecting high-frequency synthetic interfaces and resilient software vectors.</p>
+      </div>
+
+      <div class="flex items-center gap-space-lg font-label-telemetry text-label-telemetry text-on-surface-variant">
+        <div class="flex items-center gap-space-xs">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed shadow-[0_0_6px_rgba(96,255,153,0.8)]"></span>
+          <span>LATENCY: <span class="live-latency-val">4ms</span></span>
+        </div>
+        <div class="flex items-center gap-space-xs">
+          <span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_6px_rgba(57,255,20,0.8)]"></span>
+          <span>UPTIME: 99.99%</span>
+        </div>
+        <div class="flex items-center gap-space-xs">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#ccff00] shadow-[0_0_6px_rgba(204,255,0,0.8)]"></span>
+          <span>REGION: AP-SOUTH</span>
+        </div>
+      </div>
+
+      <div class="font-label-telemetry text-label-telemetry text-outline text-center md:text-right">
+        © 2026 ADITHYA // ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/cyber-core.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>

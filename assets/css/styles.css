@@ -1,0 +1,136 @@
+/* Obsidian Radium Design System - Custom Cyber Enhancements */
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #292932;
+  border-radius: 3px;
+  border: 1px solid rgba(57, 255, 20, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #39ff14;
+  box-shadow: 0 0 10px #39ff14;
+}
+
+/* Glow Effects */
+.glow-radium {
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.35);
+}
+.glow-radium-intense {
+  box-shadow: 0 0 35px rgba(57, 255, 20, 0.65), 0 0 10px rgba(57, 255, 20, 0.9);
+}
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.35);
+}
+.glow-lime {
+  box-shadow: 0 0 20px rgba(204, 255, 0, 0.35);
+}
+
+.text-glow-radium {
+  text-shadow: 0 0 12px rgba(57, 255, 20, 0.7);
+}
+.text-glow-cyan {
+  text-shadow: 0 0 12px rgba(0, 255, 136, 0.7);
+}
+
+/* 3D Card Flip Geometry */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.card-flip-inner {
+  transition: transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.is-flipped {
+  transform: rotateY(180deg);
+}
+
+/* Scanline Effect */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* CRT Flickering / Ambient Animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+@keyframes radar-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-radar {
+  animation: radar-spin 20s linear infinite;
+}
+
+/* Interactive Ripple */
+.cyber-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.cyber-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Terminal Cursor */
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  background-color: #39ff14;
+  vertical-align: middle;
+  animation: blink 1s infinite;
+}

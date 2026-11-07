@@ -1,0 +1,21 @@
+{
+  "name": "adithya-cyber-portfolio",
+  "version": "4.0.0",
+  "description": "High-performance obsidian radium developer portfolio with interactive telemetry, Web Audio synthesizers, and WebGL particle shaders.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "portfolio",
+    "cyberpunk",
+    "webgl",
+    "tailwindcss",
+    "developer",
+    "obsidian-radium"
+  ],
+  "author": "Adithya",
+  "license": "MIT"
+}
